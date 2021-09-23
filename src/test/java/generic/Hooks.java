@@ -22,7 +22,18 @@ public abstract class Hooks extends Common {
     String browserVersionJ = System.getProperty("BrowserVersion");
     String urlJ = System.getProperty("Url");
     String implicitlyWaitTimeJ=System.getProperty("ImplicitlyWaitTime");
-
+    public void readJenkinsParameters() throws IOException {
+        // put the parameter in the prop file
+        setAppProperties("TestingEnvironment",testingEnvironmentJ, PropertiesFilePath);
+        setAppProperties("UseCloudEnv",useCloudEnvJ, PropertiesFilePath);
+        setAppProperties("CloudEnvName",cloudEnvNameJ, PropertiesFilePath);
+        setAppProperties("Os",osJ, PropertiesFilePath);
+        setAppProperties("Os_version",os_versionJ, PropertiesFilePath);
+        setAppProperties("BrowserName",browserNameJ, PropertiesFilePath);
+        setAppProperties("BrowserVersion",browserVersionJ, PropertiesFilePath);
+        setAppProperties("Url",urlJ, PropertiesFilePath);
+        setAppProperties("ImplicitlyWaitTime",implicitlyWaitTimeJ, PropertiesFilePath);
+    }
     // Read properties from propertie file
     Properties prop = loadProperties(PropertiesFilePath);
     String testingEnvironment= prop.getProperty("TestingEnvironment");
@@ -52,20 +63,9 @@ public abstract class Hooks extends Common {
         amazonHomePage = PageFactory.initElements(driver,AmazonHomePage.class);
 
     }
-
-
-
     @Before
     public void setUp_Init() throws IOException {
-        // put the parameter in the prop file
-        setAppProperties("UseCloudEnv",useCloudEnvJ, PropertiesFilePath);
-        setAppProperties("UseCloudEnv",cloudEnvNameJ, PropertiesFilePath);
-        setAppProperties("UseCloudEnv",osJ, PropertiesFilePath);
-        setAppProperties("UseCloudEnv",os_versionJ, PropertiesFilePath);
-        setAppProperties("UseCloudEnv",browserNameJ, PropertiesFilePath);
-        setAppProperties("UseCloudEnv",browserVersionJ, PropertiesFilePath);
-        setAppProperties("UseCloudEnv",urlJ, PropertiesFilePath);
-        setAppProperties("UseCloudEnv",implicitlyWaitTimeJ, PropertiesFilePath);
+        readJenkinsParameters();
         setUp( useCloudEnv,  cloudEnvName,
                 os,  os_version,  browserName,
                 browserVersion, url,implicitlyWaitTime);
