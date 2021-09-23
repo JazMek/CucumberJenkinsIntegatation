@@ -72,7 +72,11 @@ steps{
 // echo "The testing Browser is : ${Browsers} "
 // echo "Headless Browser : ${Headless} "
 // echo "The running Tag is : ${tag}"
-sh "mvn test -Dcucumber.filter.tags=${tag}"
+  
+//sh "mvn test -Dcucumber.filter.tags=${tag}"
+  
+  sh "mvn install -Dcucumber.filter.tags=${tag}"
+  
 // sh 'mvn test -Dcucumber.options=”–tags ${tag}”'
 //echo "The application testing en ${TestingEnvironment} Environment, ${Browsers} Browser and Tag ${tag} was performed"
 }
