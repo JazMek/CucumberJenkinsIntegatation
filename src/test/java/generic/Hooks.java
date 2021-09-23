@@ -65,7 +65,7 @@ public abstract class Hooks extends Common {
     }
     @Before
     public void setUp_Init() throws IOException {
-        readJenkinsParameters();
+       // readJenkinsParameters();
         setUp( useCloudEnv,  cloudEnvName,
                 os,  os_version,  browserName,
                 browserVersion, url,implicitlyWaitTime);

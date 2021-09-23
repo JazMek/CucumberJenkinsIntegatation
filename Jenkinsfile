@@ -10,9 +10,13 @@ choice(name :'TestingEnvironment', choices :[
 ],
 description : "Select the Testing Environment"
 )
-  
-string(description: 'Use Cloud Environment: ', defaultValue: 'falls', name: 'UseCloudEnv')
 
+choice(name :'UseCloudEnv', choices :[
+'True',
+'False'
+],
+description : "Use Cloud Environment"
+)
 choice(name :'cloudEnvName', choices :[
 'browserstack',
 'saucelab'
@@ -28,14 +32,19 @@ choice(description : "Select the Operating System: " ,name :'Os', choices :[
 'Linux'
 ]
 )
-  
-string(description: 'Select the OS Version: ', defaultValue: 'Big Sur', name: 'Os_version')
-  
+
+choice(description : "Select the OS Version:" ,name :'Os_version', choices :[
+'Big Sur',
+'Catalina',
+'Windows 7',
+'Windows 10'
+]
+)
 choice(name :'Headless', choices :[
 'False',
 'True'
 ],
-description : "Headless Browser"
+description : "Headless Browser ?"
 )
   
 choice(name :'BrowserName', choices :[

@@ -73,8 +73,8 @@ public class Common {
             getLocalDriver(browserName);
         }
         driver.manage().timeouts().implicitlyWait(implicitlyWaitTime, TimeUnit.SECONDS);
-        driver.manage().deleteAllCookies();
-        driver.manage().window().maximize();
+        //driver.manage().deleteAllCookies();
+        //driver.manage().window().maximize();
         driver.get(url);
     }
 
