@@ -10,7 +10,6 @@ choice(name :'cloudEnvName', choices :[
 ],
 description : "Select the cloud Environment"
 )
-cloudEnvName
 choice(name :'TestingEnvironment', choices :[
 'STG',
 'DEV',
