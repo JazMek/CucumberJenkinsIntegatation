@@ -1,13 +1,15 @@
 package stepDefinations;
 
-import generic.Common;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import utill.Common;
+import webPages.AmazonHomePage;
 
 import static webPages.AmazonHomePage.*;
 
-public class StepDf extends Common {
+
+public class StepDf extends AmazonHomePage {
 
 
     @Given("load the data with the data with {string}")

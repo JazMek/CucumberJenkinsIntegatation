@@ -1,4 +1,4 @@
-package generic;
+package utill;
 
 import io.cucumber.java.Scenario;
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -15,7 +15,6 @@ import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.io.*;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -59,9 +58,9 @@ public class Common {
         return prop;
     }
 
-    public void setUp(Boolean useCloudEnv, String cloudEnvName,
-                      String os, String os_version, String browserName,
-                      String browserVersion, String url, int implicitlyWaitTime) throws IOException {
+    public  void setUp(Boolean useCloudEnv, String cloudEnvName,
+                             String os, String os_version, String browserName,
+                             String browserVersion, String url,long implicitlyWaitTime) throws IOException {
 
         if (useCloudEnv == true) {
             if (cloudEnvName.equalsIgnoreCase("browserstack")) {

@@ -4,12 +4,13 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import org.openqa.selenium.support.PageFactory;
+import utill.Common;
 import webPages.AmazonHomePage;
-
 import java.io.IOException;
 import java.util.Properties;
 
-public abstract class Hooks extends Common {
+
+public  class StarterClass extends Common {
     public static AmazonHomePage amazonHomePage;
     // get parameters from Jenkins
     String PropertiesFilePath = "src/test/resources/config.properties";
@@ -35,7 +36,18 @@ public abstract class Hooks extends Common {
         setAppProperties("ImplicitlyWaitTime",implicitlyWaitTimeJ, PropertiesFilePath);
     }
     // Read properties from propertie file
-    Properties prop = loadProperties(PropertiesFilePath);
+    public static Properties prop;
+    {
+        try {
+            prop = loadProperties(PropertiesFilePath);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    public static void Init() {
+        amazonHomePage = PageFactory.initElements(driver,AmazonHomePage.class);
+    }
+
     String testingEnvironment= prop.getProperty("TestingEnvironment");
     Boolean useCloudEnv= Boolean.parseBoolean(prop.getProperty("UseCloudEnv")) ;
     String cloudEnvName= prop.getProperty("CloudEnvName");
@@ -44,25 +56,8 @@ public abstract class Hooks extends Common {
     String browserName = prop.getProperty("BrowserName");
     String browserVersion = prop.getProperty("BrowserVersion");
     String url = prop.getProperty("Url");
-    int implicitlyWaitTime=Integer.parseInt(prop.getProperty("ImplicitlyWaitTime"));
-    public Hooks() throws IOException {
-    }
-
-    // jenkins
-//    Boolean useCloudEnv= Boolean.parseBoolean(System.getProperty("UseCloudEnv"));
-//    String cloudEnvName= System.getProperty("CloudEnvName");
-//    String os= System.getProperty("Os");
-//    String os_version = System.getProperty("Os_version");
-//    String browserName = System.getProperty("BrowserName");
-//    String browserVersion = System.getProperty("BrowserVersion");
-//    String url = System.getProperty("Url");
-//    int implicitlyWaitTime=Integer.parseInt(System.getProperty("ImplicitlyWaitTime"));
-
-    public static void Init() {
-
-        amazonHomePage = PageFactory.initElements(driver,AmazonHomePage.class);
-
-    }
+    Long implicitlywaitTime=Long.parseLong(prop.getProperty("ImplicitlyWaitTime").trim());
+    long implicitlyWaitTime= implicitlywaitTime.longValue();
     @Before
     public void setUp_Init() throws IOException {
        // readJenkinsParameters();
@@ -70,6 +65,8 @@ public abstract class Hooks extends Common {
                 os,  os_version,  browserName,
                 browserVersion, url,implicitlyWaitTime);
         Init();
+
+
     }
     //ScreenShot method
     @After

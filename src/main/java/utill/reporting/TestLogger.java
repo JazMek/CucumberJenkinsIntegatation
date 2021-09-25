@@ -1,0 +1,25 @@
+package utill.reporting;
+
+//import com.google.api.client.repackaged.org.apache.commons.codec.binary.StringUtils;
+//import com.relevantcodes.extentreports.LogStatus;
+//import com.sun.tools.javadoc.JavaScriptScanner;
+//import org.apache.commons.lang3.StringUtils;
+//import org.openqa.selenium.WebDriver;
+//import org.testng.Reporter;
+//
+public class TestLogger {
+    public static void log(String browser_is_launching) {
+    }
+//    public static void log(final String message){
+//        JavaScriptScanner.Reporter.log(message,true);
+//        ExtentTestManager.getTest().log(LogStatus.INFO, message + "<br>");
+//    }
+//    public static void log(final StringUtils message){
+//        Reporter.log(message + "<br>",true);
+//        ExtentTestManager.getTest().log(LogStatus.INFO, message + "<br>");
+//    }
+//    public static void log(final String message, WebDriver driver){
+//        Reporter.log(message,true);
+//        ExtentTestManager.getTest().log(LogStatus.INFO, message + "<br>");
+//    }
+}
