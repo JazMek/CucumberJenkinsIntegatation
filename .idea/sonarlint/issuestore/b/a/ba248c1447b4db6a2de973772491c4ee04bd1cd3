@@ -1,0 +1,174 @@
+
+u	java:S116 "`Rename this field "browserstack_username" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(§¥˜”
+{	java:S116!"aRename this field "browserstack_accesskey" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(„¬³‰øÿÿÿÿ
+w	java:S116""]Rename this field "saucelabs_username" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ø–áîøÿÿÿÿ
+s	java:S116#"^Rename this field "saucelabs_accesskey" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(éÑÎ
+‘
+java:S1845"vRename field "wait" to prevent any misunderstanding/clash with method "wait" defined in superclass "java.lang.Object".(ƒÍ×¨úÿÿÿÿ
+B
+java:S1125A"'Remove the unnecessary boolean literal.(Îï¡¥ÿÿÿÿÿ
+Q	java:S125K"<This block of commented-out lines of code should be removed.(…”Ú
+L
+java:S2696T"6Make the enclosing method "static" or remove this set.(Î°¸ó
+L
+java:S2696X"6Make the enclosing method "static" or remove this set.(Âéã±
+Q
+java:S2696\"6Make the enclosing method "static" or remove this set.(Áç¸ÿøÿÿÿÿ
+Q
+java:S2696`"6Make the enclosing method "static" or remove this set.(üü ƒıÿÿÿÿ
+Q
+java:S2696f"6Make the enclosing method "static" or remove this set.(¯ƒÊşÿÿÿÿ
+K
+java:S2696t"6Make the enclosing method "static" or remove this set.(À“§.
+K
+java:S2696x"6Make the enclosing method "static" or remove this set.(À“§.
+\
+java:S2147ˆ"ECombine this catch with the one at line 134, which has the same body.(ï­£Ä
+O	java:S106±"9Replace this use of System.out or System.err by a logger.(½¿¿¢
+T	java:S106µ"9Replace this use of System.out or System.err by a logger.(–ø¶ºüÿÿÿÿ
+O	java:S106¸"9Replace this use of System.out or System.err by a logger.(å£Ÿë
+O	java:S106Ä"9Replace this use of System.out or System.err by a logger.(½¿¿¢
+T	java:S106È"9Replace this use of System.out or System.err by a logger.(–ø¶ºüÿÿÿÿ
+O	java:S106Ë"9Replace this use of System.out or System.err by a logger.(å£Ÿë
+N	java:S106Ş"9Replace this use of System.out or System.err by a logger.(ìÇ‰P
+T
+java:S1854†"8Remove this useless assignment to local variable "list".(“Ç¬üÿÿÿÿ
+W
+java:S1854Œ";Remove this useless assignment to local variable "element".(©‘ äüÿÿÿÿ
+W
+java:S1854—";Remove this useless assignment to local variable "element".(©‘ äüÿÿÿÿ
+T
+java:S1854§"8Remove this useless assignment to local variable "list".(“Ç¬üÿÿÿÿ
+T
+java:S1854­"8Remove this useless assignment to local variable "list".(“Ç¬üÿÿÿÿ
+T
+java:S1854³"8Remove this useless assignment to local variable "list".(“Ç¬üÿÿÿÿ
+P
+java:S1854ï"9Remove this useless assignment to local variable "hover".(¼÷Íä
+A
+java:S1481ï"*Remove this unused "hover" local variable.(¼÷Íä
+O	java:S106ñ"9Replace this use of System.out or System.err by a logger.(Ø¦ÙÔ
+O	java:S106ş"9Replace this use of System.out or System.err by a logger.(à¶êö
+W
+java:S1854¤";Remove this useless assignment to local variable "element".(¥Úóşÿÿÿÿ
+T
+java:S1117£"8Rename "wait" which hides the field declared at line 31.(ïà’‰ùÿÿÿÿ
+H
+java:S1481¤",Remove this unused "element" local variable.(¥Úóşÿÿÿÿ
+R
+java:S1854©";Remove this useless assignment to local variable "element".(Ò àá
+T
+java:S1117¨"8Rename "wait" which hides the field declared at line 31.(ïà’‰ùÿÿÿÿ
+C
+java:S1481©",Remove this unused "element" local variable.(Ò àá
+R
+java:S1854®";Remove this useless assignment to local variable "element".(½Éı
+T
+java:S1117­"8Rename "wait" which hides the field declared at line 31.(ïà’‰ùÿÿÿÿ
+C
+java:S1481®",Remove this unused "element" local variable.(½Éı
+W	java:S125´"<This block of commented-out lines of code should be removed.(¿’€òşÿÿÿÿ
+T	java:S106Ò"9Replace this use of System.out or System.err by a logger.(‘±Ü×úÿÿÿÿ
+O	java:S106×"9Replace this use of System.out or System.err by a logger.(ı‹ˆ
+T	java:S106Ü"9Replace this use of System.out or System.err by a logger.(¤øĞôøÿÿÿÿ
+O	java:S106ç"9Replace this use of System.out or System.err by a logger.(ìÒÜæ
+R	java:S125ì"<This block of commented-out lines of code should be removed.(Œç¬•
+T	java:S106ñ"9Replace this use of System.out or System.err by a logger.(ó–‹áüÿÿÿÿ
+T	java:S106û"9Replace this use of System.out or System.err by a logger.(§¬ëÿÿÿÿÿ
+T	java:S106"9Replace this use of System.out or System.err by a logger.(Òúã§ıÿÿÿÿ
+O	java:S106 "9Replace this use of System.out or System.err by a logger.(¿…Ñé
+T	java:S106£"9Replace this use of System.out or System.err by a logger.(¹É‰Ëûÿÿÿÿ
+O	java:S106§"9Replace this use of System.out or System.err by a logger.(»«ÿı
+O	java:S106«"9Replace this use of System.out or System.err by a logger.(ú—ô·
+\
+java:S2147¸"ECombine this catch with the one at line 566, which has the same body.(ÀŒÂã
+T
+java:S1117Ç"8Rename "wait" which hides the field declared at line 31.(ïà’‰ùÿÿÿÿ
+u
+java:S2142Î"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€
+N	java:S106Í"9Replace this use of System.out or System.err by a logger.(„Å•
+u
+java:S2142×"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(°òÒ¬
+O	java:S106Ñ"9Replace this use of System.out or System.err by a logger.(ãİ˜
+W	java:S125Ş"<This block of commented-out lines of code should be removed.(ÿæÒ„ıÿÿÿÿ
+O	java:S106â"9Replace this use of System.out or System.err by a logger.(¿´¨¦
+T	java:S106ä"9Replace this use of System.out or System.err by a logger.(Ù™Á…ıÿÿÿÿ
+O	java:S106è"9Replace this use of System.out or System.err by a logger.(òÃ¯®
+O	java:S106é"9Replace this use of System.out or System.err by a logger.(Áı¶í
+W	java:S125ï"<This block of commented-out lines of code should be removed.(¶ƒª¥ùÿÿÿÿ
+W	java:S125ˆ"<This block of commented-out lines of code should be removed.(ìÀè‰üÿÿÿÿ
+u
+java:S2293†"YReplace the type specification in this constructor call with the diamond operator ("<>").(“Ç¬üÿÿÿÿ
+u
+java:S2293Œ"YReplace the type specification in this constructor call with the diamond operator ("<>").(©‘ äüÿÿÿÿ
+p
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ö¤“ú
+u
+java:S2293—"YReplace the type specification in this constructor call with the diamond operator ("<>").(©‘ äüÿÿÿÿ
+p
+java:S2293˜"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ö¤“ú
+u
+java:S2293§"YReplace the type specification in this constructor call with the diamond operator ("<>").(“Ç¬üÿÿÿÿ
+u
+java:S2293­"YReplace the type specification in this constructor call with the diamond operator ("<>").(“Ç¬üÿÿÿÿ
+u
+java:S2293³"YReplace the type specification in this constructor call with the diamond operator ("<>").(“Ç¬üÿÿÿÿ
+p
+java:S2293Û"YReplace the type specification in this constructor call with the diamond operator ("<>").(½¦£Ç
+p
+java:S2293Ã"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ñ€ª³
+p
+java:S2293é"YReplace the type specification in this constructor call with the diamond operator ("<>").(Ÿ âç
+Q	java:S107="<Method has 8 parameters, which is greater than 7 authorized.(ÿÑï÷
+f	java:S117&"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦çîâ
+f	java:S117&"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¦çîâ
+k	java:S117>"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İÇ˜ÿûÿÿÿÿ
+l	java:S117k"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(†÷ÆD8Ä¾üÚÁ/
+g	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿ¿“Ø
+g	java:S117„"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İ”Å
+s
+java:S1488¢"\Immediately return this expression instead of assigning it to the temporary variable "list".(í¦ 
+r
+java:S1488¹"[Immediately return this expression instead of assigning it to the temporary variable "url".(˜±¤
+y
+java:S1488¾"]Immediately return this expression instead of assigning it to the temporary variable "title".(ê•‹Ëùÿÿÿÿ
+q
+java:S1488È"ZImmediately return this expression instead of assigning it to the temporary variable "st".(âÛó
+v
+java:S1488Í"ZImmediately return this expression instead of assigning it to the temporary variable "st".(ş¦¯ûÿÿÿÿ
+v
+java:S1488Ö"ZImmediately return this expression instead of assigning it to the temporary variable "st".(¯ñşÿÿÿÿ
+y
+java:S1488Ê"]Immediately return this expression instead of assigning it to the temporary variable "value".(´¶‚Ùùÿÿÿÿ
+s
+java:S1488Š"\Immediately return this expression instead of assigning it to the temporary variable "text".(Œ¼›
+m
+java:S1104"RMake driver a static final constant or non-public and provide accessors if needed.(ÜçÁÈûÿÿÿÿ
+k
+java:S1104"PMake wait a static final constant or non-public and provide accessors if needed.(ƒÍ×¨úÿÿÿÿ
+w
+java:S1104 "aMake browserstack_username a static final constant or non-public and provide accessors if needed.(§¥˜”
+}
+java:S1104!"bMake browserstack_accesskey a static final constant or non-public and provide accessors if needed.(„¬³‰øÿÿÿÿ
+y
+java:S1104""^Make saucelabs_username a static final constant or non-public and provide accessors if needed.(Ø–áîøÿÿÿÿ
+u
+java:S1104#"_Make saucelabs_accesskey a static final constant or non-public and provide accessors if needed.(éÑÎ
+G
+java:S1444",Make this "public static driver" field final(ÜçÁÈûÿÿÿÿ
+E
+java:S1444"*Make this "public static wait" field final(ƒÍ×¨úÿÿÿÿ
+E
+java:S5411A"*Use the primitive boolean expression here.(Îï¡¥ÿÿÿÿÿ
+b
+java:S2184è"FCast one of the operands of this multiplication operation to a "long".(Ä ¶ÿÿÿÿÿ
+c
+java:S2095*"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(¿ÍµW
+j
+java:S2095("MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(¦ô–©8«¿üÚÁ/
+c
+java:S20957"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(¦ô–©
+~
+java:S4165¹"bRemove this useless assignment; "flag" already holds the assigned value along all execution paths.(ÚÄ¦òøÿÿÿÿ
+~
+java:S4165·"bRemove this useless assignment; "flag" already holds the assigned value along all execution paths.(ÚÄ¦òøÿÿÿÿ

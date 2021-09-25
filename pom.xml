@@ -130,27 +130,27 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M4</version>
-                <configuration>
-                    <testFailureIgnore>true</testFailureIgnore>
-                    <systemPropertyVariables>
-                        <!--suppress UnresolvedMavenProperty -->
-                        <TestingEnvironment>${DTestingEnvironment}</TestingEnvironment>
-                        <!--suppress UnresolvedMavenProperty -->
-                        <Os>${DOs}</Os>
-                        <!--suppress UnresolvedMavenProperty -->
-                        <Os_version>${DOs_version}</Os_version>
-                        <!--suppress UnresolvedMavenProperty -->
-                        <BrowserName>${DBrowserName}</BrowserName>
-                        <!--suppress UnresolvedMavenProperty -->
-                        <BrowserVersion>${DBrowserVersion}</BrowserVersion>
-                        <!--suppress UnresolvedMavenProperty -->
-                        <UseCloudEnv>${DUseCloudEnv}</UseCloudEnv>
-                        <!--suppress UnresolvedMavenProperty -->
-                        <CloudEnvName>${DCloudEnvName}</CloudEnvName>
-                        <!--suppress UnresolvedMavenProperty -->
-                        <ImplicitlyWaitTime>${DImplicitlyWaitTime}</ImplicitlyWaitTime>
-                    </systemPropertyVariables>
-                </configuration>
+<!--                <configuration>-->
+<!--                    <testFailureIgnore>true</testFailureIgnore>-->
+<!--                    <systemPropertyVariables>-->
+<!--                        &lt;!&ndash;suppress UnresolvedMavenProperty &ndash;&gt;-->
+<!--                        <TestingEnvironment>${DTestingEnvironment}</TestingEnvironment>-->
+<!--                        &lt;!&ndash;suppress UnresolvedMavenProperty &ndash;&gt;-->
+<!--                        <Os>${DOs}</Os>-->
+<!--                        &lt;!&ndash;suppress UnresolvedMavenProperty &ndash;&gt;-->
+<!--                        <Os_version>${DOs_version}</Os_version>-->
+<!--                        &lt;!&ndash;suppress UnresolvedMavenProperty &ndash;&gt;-->
+<!--                        <BrowserName>${DBrowserName}</BrowserName>-->
+<!--                        &lt;!&ndash;suppress UnresolvedMavenProperty &ndash;&gt;-->
+<!--                        <BrowserVersion>${DBrowserVersion}</BrowserVersion>-->
+<!--                        &lt;!&ndash;suppress UnresolvedMavenProperty &ndash;&gt;-->
+<!--                        <UseCloudEnv>${DUseCloudEnv}</UseCloudEnv>-->
+<!--                        &lt;!&ndash;suppress UnresolvedMavenProperty &ndash;&gt;-->
+<!--                        <CloudEnvName>${DCloudEnvName}</CloudEnvName>-->
+<!--                        &lt;!&ndash;suppress UnresolvedMavenProperty &ndash;&gt;-->
+<!--                        <ImplicitlyWaitTime>${DImplicitlyWaitTime}</ImplicitlyWaitTime>-->
+<!--                    </systemPropertyVariables>-->
+<!--                </configuration>-->
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
