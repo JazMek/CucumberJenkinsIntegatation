@@ -6,6 +6,8 @@ import io.cucumber.java.en.When;
 import utill.Common;
 import webPages.AmazonHomePage;
 
+import java.io.IOException;
+
 import static webPages.AmazonHomePage.*;
 
 
@@ -26,6 +28,11 @@ public class StepDf extends AmazonHomePage {
     @Given("the user lands to the Amazon home page")
     public void the_user_lands_to_the_amazon_home_page() {
         System.out.println(driver.getTitle());
+        try {
+            System.out.println(loadProperties("src/test/resources/config.properties").getProperty("ImplicitlyWaitTime"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
     }
     @When("user enter {string}")
