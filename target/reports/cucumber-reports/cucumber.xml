@@ -1,36 +1,126 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="30.496">
-<testcase classname="Amazon search box" name=": testing search box in amazon home page" time="6.306">
-<system-out><![CDATA[Given the user lands to the Amazon home page................................passed
-When user enter "galaxy7"...................................................passed
-Then user should see a corespending "galaxy7"...............................passed
-]]></system-out>
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="26.284">
+<testcase classname="Amazon search box" name=": testing search box in amazon home page" time="7.078">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#twotabsearchtextbox1&quot;}&#10;  (Session info: chrome=94.0.4606.61)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'Karims-MBP.fios-router.home', ip: 'fe80:0:0:0:1401:f89c:dedd:64a6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_251'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.61, chrome: {chromedriverVersion: 94.0.4606.41 (333e85df3c9b6..., userDataDir: /var/folders/jk/jdwgknx526g...}, goog:chromeOptions: {debuggerAddress: localhost:49809}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: bc0e54987313c7e6c849d6dc0ee816c4&#10;*** Element info: {Using=id, value=twotabsearchtextbox1}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given the user lands to the Amazon home page................................passed
+When user enter "galaxy7"...................................................failed
+Then user should see a corespending "galaxy7"...............................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#twotabsearchtextbox1"}
+  (Session info: chrome=94.0.4606.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Karims-MBP.fios-router.home', ip: 'fe80:0:0:0:1401:f89c:dedd:64a6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.61, chrome: {chromedriverVersion: 94.0.4606.41 (333e85df3c9b6..., userDataDir: /var/folders/jk/jdwgknx526g...}, goog:chromeOptions: {debuggerAddress: localhost:49809}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: bc0e54987313c7e6c849d6dc0ee816c4
+*** Element info: {Using=id, value=twotabsearchtextbox1}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy20.sendKeys(Unknown Source)
+	at stepDefinations.StepDf.user_enter(StepDf.java:41)
+	at ✽.user enter "galaxy7"(file:///Users/karimmekdoud/Desktop/CucumberJenkinsIntegration/src/test/resources/featureFiles/Amazon.feature:6)
+]]></failure>
 </testcase>
-<testcase classname="Amazon search box" name=": testing search box in amazon home page 2" time="7.63">
-<system-out><![CDATA[Given the user lands to the Amazon home page................................passed
-When user enter "iphone 11".................................................passed
-Then user should see a corespending "galaxy7"...............................passed
-]]></system-out>
+<testcase classname="Amazon search box" name=": testing search box in amazon home page 2" time="5.454">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#twotabsearchtextbox1&quot;}&#10;  (Session info: chrome=94.0.4606.61)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'Karims-MBP.fios-router.home', ip: 'fe80:0:0:0:1401:f89c:dedd:64a6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_251'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.61, chrome: {chromedriverVersion: 94.0.4606.41 (333e85df3c9b6..., userDataDir: /var/folders/jk/jdwgknx526g...}, goog:chromeOptions: {debuggerAddress: localhost:49894}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: d85cfbe2fa6c0d778c689d782ff0b68f&#10;*** Element info: {Using=id, value=twotabsearchtextbox1}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given the user lands to the Amazon home page................................passed
+When user enter "iphone 11".................................................failed
+Then user should see a corespending "galaxy7"...............................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#twotabsearchtextbox1"}
+  (Session info: chrome=94.0.4606.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Karims-MBP.fios-router.home', ip: 'fe80:0:0:0:1401:f89c:dedd:64a6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.61, chrome: {chromedriverVersion: 94.0.4606.41 (333e85df3c9b6..., userDataDir: /var/folders/jk/jdwgknx526g...}, goog:chromeOptions: {debuggerAddress: localhost:49894}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d85cfbe2fa6c0d778c689d782ff0b68f
+*** Element info: {Using=id, value=twotabsearchtextbox1}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy20.sendKeys(Unknown Source)
+	at stepDefinations.StepDf.user_enter(StepDf.java:41)
+	at ✽.user enter "iphone 11"(file:///Users/karimmekdoud/Desktop/CucumberJenkinsIntegration/src/test/resources/featureFiles/Amazon.feature:6)
+]]></failure>
 </testcase>
-<testcase classname="Amazon search box" name=": testing search box in amazon home page 3" time="6.065">
-<system-out><![CDATA[Given the user lands to the Amazon home page................................passed
-When user enter "battery"...................................................passed
-Then user should see a corespending "galaxy7"...............................passed
-]]></system-out>
+<testcase classname="Amazon search box" name=": testing search box in amazon home page 3" time="5.294">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#twotabsearchtextbox1&quot;}&#10;  (Session info: chrome=94.0.4606.61)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'Karims-MBP.fios-router.home', ip: 'fe80:0:0:0:1401:f89c:dedd:64a6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_251'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.61, chrome: {chromedriverVersion: 94.0.4606.41 (333e85df3c9b6..., userDataDir: /var/folders/jk/jdwgknx526g...}, goog:chromeOptions: {debuggerAddress: localhost:49977}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a13291124ada5201747e43f7371714a1&#10;*** Element info: {Using=id, value=twotabsearchtextbox1}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given the user lands to the Amazon home page................................passed
+When user enter "battery"...................................................failed
+Then user should see a corespending "galaxy7"...............................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"#twotabsearchtextbox1"}
+  (Session info: chrome=94.0.4606.61)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Karims-MBP.fios-router.home', ip: 'fe80:0:0:0:1401:f89c:dedd:64a6%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_251'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.61, chrome: {chromedriverVersion: 94.0.4606.41 (333e85df3c9b6..., userDataDir: /var/folders/jk/jdwgknx526g...}, goog:chromeOptions: {debuggerAddress: localhost:49977}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a13291124ada5201747e43f7371714a1
+*** Element info: {Using=id, value=twotabsearchtextbox1}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)
+	at org.openqa.selenium.By$ById.findElement(By.java:188)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy20.sendKeys(Unknown Source)
+	at stepDefinations.StepDf.user_enter(StepDf.java:41)
+	at ✽.user enter "battery"(file:///Users/karimmekdoud/Desktop/CucumberJenkinsIntegration/src/test/resources/featureFiles/Amazon.feature:6)
+]]></failure>
 </testcase>
-<testcase classname="FFM-OCMF-CreateOrderEventTransformerComparator" name="Create Order Event Transformer" time="3.626">
+<testcase classname="FFM-OCMF-CreateOrderEventTransformerComparator" name="Create Order Event Transformer" time="2.843">
 <system-out><![CDATA[Given load the data with the data with "testdata"...........................passed
 Given with data file prefixed with "testdata" and json file is "testdata"...passed
 Then call apis and validate with all the data provided......................passed
 ]]></system-out>
 </testcase>
-<testcase classname="FFM-OCMF-CreateOrderEventTransformer" name="Create Order Event Transformer" time="3.296">
+<testcase classname="FFM-OCMF-CreateOrderEventTransformer" name="Create Order Event Transformer" time="2.742">
 <system-out><![CDATA[Given load the data with the data with "testdata"...........................passed
 Given with data file prefixed with "testdata" and json file is "testdata"...passed
 Then call apis and validate with all the data provided......................passed
 ]]></system-out>
 </testcase>
-<testcase classname="FFM-OCMF-CreateOrderEventValidation" name="Create Order Event Validation" time="3.332">
+<testcase classname="FFM-OCMF-CreateOrderEventValidation" name="Create Order Event Validation" time="2.673">
 <system-out><![CDATA[Given load the data with the data with "testdata"...........................passed
 Given with data file prefixed with "testdata" and json file is "testdata"...passed
 Then call apis and validate with all the data provided......................passed

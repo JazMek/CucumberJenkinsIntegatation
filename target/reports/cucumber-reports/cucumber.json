@@ -3,11 +3,11 @@
     "line": 2,
     "elements": [
       {
-        "start_timestamp": "2021-09-25T21:48:24.782Z",
+        "start_timestamp": "2021-09-26T23:40:02.147Z",
         "before": [
           {
             "result": {
-              "duration": 3987000000,
+              "duration": 3779000000,
               "status": "passed"
             },
             "match": {
@@ -22,7 +22,7 @@
         "after": [
           {
             "result": {
-              "duration": 158000000,
+              "duration": 1086000000,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 30000000,
+              "duration": 57000000,
               "status": "passed"
             },
             "line": 5,
@@ -47,8 +47,9 @@
           },
           {
             "result": {
-              "duration": 2014000000,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#twotabsearchtextbox1\"}\n  (Session info: chrome\u003d94.0.4606.61)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Karims-MBP.fios-router.home\u0027, ip: \u0027fe80:0:0:0:1401:f89c:dedd:64a6%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u00271.8.0_251\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.61, chrome: {chromedriverVersion: 94.0.4606.41 (333e85df3c9b6..., userDataDir: /var/folders/jk/jdwgknx526g...}, goog:chromeOptions: {debuggerAddress: localhost:49809}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: bc0e54987313c7e6c849d6dc0ee816c4\n*** Element info: {Using\u003did, value\u003dtwotabsearchtextbox1}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy20.sendKeys(Unknown Source)\n\tat stepDefinations.StepDf.user_enter(StepDf.java:41)\n\tat ✽.user enter \"galaxy7\"(file:///Users/karimmekdoud/Desktop/CucumberJenkinsIntegration/src/test/resources/featureFiles/Amazon.feature:6)\n",
+              "duration": 2074000000,
+              "status": "failed"
             },
             "line": 6,
             "name": "user enter \"galaxy7\"",
@@ -65,8 +66,7 @@
           },
           {
             "result": {
-              "duration": 31000000,
-              "status": "passed"
+              "status": "skipped"
             },
             "line": 7,
             "name": "user should see a corespending \"galaxy7\"",
@@ -95,11 +95,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-09-25T21:48:31.099Z",
+        "start_timestamp": "2021-09-26T23:40:09.240Z",
         "before": [
           {
             "result": {
-              "duration": 4059000000,
+              "duration": 2771000000,
               "status": "passed"
             },
             "match": {
@@ -114,7 +114,7 @@
         "after": [
           {
             "result": {
-              "duration": 158000000,
+              "duration": 659000000,
               "status": "passed"
             },
             "match": {
@@ -127,7 +127,7 @@
         "steps": [
           {
             "result": {
-              "duration": 8000000,
+              "duration": 6000000,
               "status": "passed"
             },
             "line": 5,
@@ -139,8 +139,9 @@
           },
           {
             "result": {
-              "duration": 3361000000,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#twotabsearchtextbox1\"}\n  (Session info: chrome\u003d94.0.4606.61)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Karims-MBP.fios-router.home\u0027, ip: \u0027fe80:0:0:0:1401:f89c:dedd:64a6%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u00271.8.0_251\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.61, chrome: {chromedriverVersion: 94.0.4606.41 (333e85df3c9b6..., userDataDir: /var/folders/jk/jdwgknx526g...}, goog:chromeOptions: {debuggerAddress: localhost:49894}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: d85cfbe2fa6c0d778c689d782ff0b68f\n*** Element info: {Using\u003did, value\u003dtwotabsearchtextbox1}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy20.sendKeys(Unknown Source)\n\tat stepDefinations.StepDf.user_enter(StepDf.java:41)\n\tat ✽.user enter \"iphone 11\"(file:///Users/karimmekdoud/Desktop/CucumberJenkinsIntegration/src/test/resources/featureFiles/Amazon.feature:6)\n",
+              "duration": 2010000000,
+              "status": "failed"
             },
             "line": 6,
             "name": "user enter \"iphone 11\"",
@@ -157,8 +158,8 @@
           },
           {
             "result": {
-              "duration": 34000000,
-              "status": "passed"
+              "duration": 1000000,
+              "status": "skipped"
             },
             "line": 7,
             "name": "user should see a corespending \"galaxy7\"",
@@ -187,11 +188,11 @@
         ]
       },
       {
-        "start_timestamp": "2021-09-25T21:48:38.734Z",
+        "start_timestamp": "2021-09-26T23:40:14.699Z",
         "before": [
           {
             "result": {
-              "duration": 3004000000,
+              "duration": 2634000000,
               "status": "passed"
             },
             "match": {
@@ -206,7 +207,7 @@
         "after": [
           {
             "result": {
-              "duration": 176000000,
+              "duration": 478000000,
               "status": "passed"
             },
             "match": {
@@ -219,7 +220,7 @@
         "steps": [
           {
             "result": {
-              "duration": 179000000,
+              "duration": 116000000,
               "status": "passed"
             },
             "line": 5,
@@ -231,8 +232,9 @@
           },
           {
             "result": {
-              "duration": 2660000000,
-              "status": "passed"
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"#twotabsearchtextbox1\"}\n  (Session info: chrome\u003d94.0.4606.61)\nFor documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Karims-MBP.fios-router.home\u0027, ip: \u0027fe80:0:0:0:1401:f89c:dedd:64a6%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.16\u0027, java.version: \u00271.8.0_251\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 94.0.4606.61, chrome: {chromedriverVersion: 94.0.4606.41 (333e85df3c9b6..., userDataDir: /var/folders/jk/jdwgknx526g...}, goog:chromeOptions: {debuggerAddress: localhost:49977}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: a13291124ada5201747e43f7371714a1\n*** Element info: {Using\u003did, value\u003dtwotabsearchtextbox1}\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\n\tat sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\n\tat sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\n\tat java.lang.reflect.Constructor.newInstance(Constructor.java:423)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)\n\tat org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElementById(RemoteWebDriver.java:372)\n\tat org.openqa.selenium.By$ById.findElement(By.java:188)\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)\n\tat com.sun.proxy.$Proxy20.sendKeys(Unknown Source)\n\tat stepDefinations.StepDf.user_enter(StepDf.java:41)\n\tat ✽.user enter \"battery\"(file:///Users/karimmekdoud/Desktop/CucumberJenkinsIntegration/src/test/resources/featureFiles/Amazon.feature:6)\n",
+              "duration": 2059000000,
+              "status": "failed"
             },
             "line": 6,
             "name": "user enter \"battery\"",
@@ -249,8 +251,8 @@
           },
           {
             "result": {
-              "duration": 42000000,
-              "status": "passed"
+              "duration": 1000000,
+              "status": "skipped"
             },
             "line": 7,
             "name": "user should see a corespending \"galaxy7\"",
@@ -307,11 +309,11 @@
     "line": 3,
     "elements": [
       {
-        "start_timestamp": "2021-09-25T21:48:44.804Z",
+        "start_timestamp": "2021-09-26T23:40:19.998Z",
         "before": [
           {
             "result": {
-              "duration": 3484000000,
+              "duration": 2670000000,
               "status": "passed"
             },
             "match": {
@@ -326,7 +328,7 @@
         "after": [
           {
             "result": {
-              "duration": 134000000,
+              "duration": 160000000,
               "status": "passed"
             },
             "match": {
@@ -339,7 +341,6 @@
         "steps": [
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 6,
@@ -357,6 +358,7 @@
           },
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 7,
@@ -378,6 +380,7 @@
           },
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 8,
@@ -437,11 +440,11 @@
     "line": 3,
     "elements": [
       {
-        "start_timestamp": "2021-09-25T21:48:48.434Z",
+        "start_timestamp": "2021-09-26T23:40:22.843Z",
         "before": [
           {
             "result": {
-              "duration": 3171000000,
+              "duration": 2623000000,
               "status": "passed"
             },
             "match": {
@@ -456,7 +459,7 @@
         "after": [
           {
             "result": {
-              "duration": 117000000,
+              "duration": 114000000,
               "status": "passed"
             },
             "match": {
@@ -469,6 +472,7 @@
         "steps": [
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 6,
@@ -486,7 +490,6 @@
           },
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 7,
@@ -508,7 +511,6 @@
           },
           {
             "result": {
-              "duration": 1000000,
               "status": "passed"
             },
             "line": 8,
@@ -549,11 +551,11 @@
     "line": 3,
     "elements": [
       {
-        "start_timestamp": "2021-09-25T21:48:51.733Z",
+        "start_timestamp": "2021-09-26T23:40:25.588Z",
         "before": [
           {
             "result": {
-              "duration": 3201000000,
+              "duration": 2503000000,
               "status": "passed"
             },
             "match": {
@@ -568,7 +570,7 @@
         "after": [
           {
             "result": {
-              "duration": 122000000,
+              "duration": 162000000,
               "status": "passed"
             },
             "match": {
@@ -581,6 +583,7 @@
         "steps": [
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 6,
@@ -598,6 +601,7 @@
           },
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 7,
@@ -619,6 +623,7 @@
           },
           {
             "result": {
+              "duration": 1000000,
               "status": "passed"
             },
             "line": 8,

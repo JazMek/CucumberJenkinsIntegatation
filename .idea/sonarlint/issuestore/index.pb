@@ -1,8 +1,6 @@
 
 ;
 Jenkinsfile,0/c/0c2c5c506cef0ed2d3ad2b7e45e97980b66f5520
-Z
-*src/main/java/webPages/AmazonHomePage.java,d/9/d97b79e71dfd16afeea136cbc9d9875865cc84c3
 O
 src/main/java/utill/Common.java,b/a/ba248c1447b4db6a2de973772491c4ee04bd1cd3
 ]
