@@ -17,11 +17,11 @@ choice(name :'UseCloudEnv', choices :[
 ],
 description : "Use Cloud Environment"
 )
-choice(name :'cloudEnvName', choices :[
+choice(name :'CloudEnvName', choices :[
 'browserstack',
 'saucelab'
 ],
-description : "Select the cloud Environment"
+description : "Select the Cloud Environment"
 )
   
 string(description: 'Entre the Url : ', defaultValue: 'https://www.exemple.com/', name: 'Url')
@@ -85,7 +85,7 @@ steps{
 //sh "mvn test -Dcucumber.filter.tags=${tag}"
   
    //sh "mvn install -Dcucumber.filter.tags=${tag}"
-   sh "mvn install -Dcucumber.filter.tags=${tag} -DTestingEnvironment=${TestingEnvironment}"
+   sh "mvn install -Dcucumber.filter.tags=${tag} -DTestingEnvironment=${TestingEnvironment} -DUseCloudEnv=${UseCloudEnv} -DCloudEnvName=${CloudEnvName} -DCloudEnvName=${CloudEnvName}"
   
 // sh 'mvn test -Dcucumber.options=”–tags ${tag}”'
 //echo "The application testing en ${TestingEnvironment} Environment, ${Browsers} Browser and Tag ${tag} was performed"
