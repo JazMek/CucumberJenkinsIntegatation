@@ -56,8 +56,8 @@ public  class StarterClass extends Common {
     String browserName = prop.getProperty("BrowserName");
     String browserVersion = prop.getProperty("BrowserVersion");
     String url = prop.getProperty("Url");
-    long implicitlyWaitTime=Long.parseLong(prop.getProperty("ImplicitlyWaitTime").trim());
-    //long implicitlyWaitTime= implicitlywaitTime.longValue();
+    Long implicitlywaitTime=Long.parseLong(prop.getProperty("ImplicitlyWaitTime").trim());
+    long implicitlyWaitTime= implicitlywaitTime.longValue();
     @Before
     public void setUp_Init() throws IOException {
         readJenkinsParameters();
