@@ -61,6 +61,9 @@ public  class StarterClass extends Common {
     @Before
     public void setUp_Init() throws IOException {
        // readJenkinsParameters();
+        System.out.println("The Testing Environment is: "+testingEnvironment);
+        System.out.println("Use Cloud Environment? "+useCloudEnv);
+        System.out.println("The Cloud Environment Name is: "+cloudEnvName);
         setUp( useCloudEnv,  cloudEnvName,
                 os,  os_version,  browserName,
                 browserVersion, url,implicitlyWaitTime);

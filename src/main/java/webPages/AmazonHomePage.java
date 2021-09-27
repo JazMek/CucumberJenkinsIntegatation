@@ -6,7 +6,7 @@ import org.openqa.selenium.support.How;
 import utill.Common;
 
 public class AmazonHomePage extends Common {
-    static final  String  SearchBoxID="twotabsearchtextbox1";
+    static final  String  SearchBoxID="twotabsearchtextbox";
     @FindBy(how= How.ID,using=SearchBoxID)
     public static WebElement SearchBox;
     static final  String  SearchBoxButtonID="nav-search-submit-button";
