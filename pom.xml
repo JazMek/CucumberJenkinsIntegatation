@@ -3,31 +3,15 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>org.example</groupId>
     <artifactId>CucumberJenkinsIntegration</artifactId>
     <version>1.0-SNAPSHOT</version>
-<!--    <properties>-->
-<!--        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>-->
-<!--        <maven.compiler.source>1.8</maven.compiler.source>-->
-<!--        <maven.compiler.target>1.8</maven.compiler.target>-->
-<!--        &lt;!&ndash;suppress UnresolvedMavenProperty &ndash;&gt;-->
-<!--        <TestingEnvironment>${DTestingEnvironment}</TestingEnvironment>-->
-<!--        &lt;!&ndash;suppress UnresolvedMavenProperty &ndash;&gt;-->
-<!--        <Os>${DOs}</Os>-->
-<!--        &lt;!&ndash;suppress UnresolvedMavenProperty &ndash;&gt;-->
-<!--        <Os_version>${DOs_version}</Os_version>-->
-<!--        &lt;!&ndash;suppress UnresolvedMavenProperty &ndash;&gt;-->
-<!--        <BrowserName>${DBrowserName}</BrowserName>-->
-<!--        &lt;!&ndash;suppress UnresolvedMavenProperty &ndash;&gt;-->
-<!--        <BrowserVersion>${DBrowserVersion}</BrowserVersion>-->
-<!--        &lt;!&ndash;suppress UnresolvedMavenProperty &ndash;&gt;-->
-<!--        <UseCloudEnv>${DUseCloudEnv}</UseCloudEnv>-->
-<!--        &lt;!&ndash;suppress UnresolvedMavenProperty &ndash;&gt;-->
-<!--        <CloudEnvName>${DCloudEnvName}</CloudEnvName>-->
-<!--        &lt;!&ndash;suppress UnresolvedMavenProperty &ndash;&gt;-->
-<!--        <ImplicitlyWaitTime>${DImplicitlyWaitTime}</ImplicitlyWaitTime>-->
-<!--    </properties>-->
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+
 
     <dependencies>
         <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-html -->
@@ -118,6 +102,20 @@
         </dependency>
     </dependencies>
 
+    <profiles>
+        <profile>
+            <id>envUrl</id>
+
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <env.url>https://www.amazon.com/</env.url>
+                <env.os>Mac</env.os>
+            </properties>
+
+        </profile>
+    </profiles>
     <build>
         <testResources>
             <testResource>
@@ -129,28 +127,35 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0-M4</version>
+                <version>2.12.4</version>
                 <configuration>
-                    <testFailureIgnore>true</testFailureIgnore>
+<!--                    <testFailureIgnore>true</testFailureIgnore>-->
                     <systemPropertyVariables>
-                        <!--suppress UnresolvedMavenProperty -->
-                        <TestingEnvironment>${DTestingEnvironment}</TestingEnvironment>
-                        <!--suppress UnresolvedMavenProperty -->
-                        <Os>${DOs}</Os>
-                        <!--suppress UnresolvedMavenProperty -->
-                        <Os_version>${DOs_version}</Os_version>
-                        <!--suppress UnresolvedMavenProperty -->
-                        <BrowserName>${DBrowserName}</BrowserName>
-                        <!--suppress UnresolvedMavenProperty -->
-                        <BrowserVersion>${DBrowserVersion}</BrowserVersion>
-                        <!--suppress UnresolvedMavenProperty -->
-                        <UseCloudEnv>${DUseCloudEnv}</UseCloudEnv>
-                        <!--suppress UnresolvedMavenProperty -->
-                        <CloudEnvName>${DCloudEnvName}</CloudEnvName>
-                        <!--suppress UnresolvedMavenProperty -->
-                        <ImplicitlyWaitTime>${DImplicitlyWaitTime}</ImplicitlyWaitTime>
+                        <TestingEnvironment>${env.url}</TestingEnvironment>
+                        <Os>${env.os}</Os>
+<!--                        &lt;!&ndash;suppress UnresolvedMavenProperty &ndash;&gt;-->
+<!--                        <Os_version>${DOs_version}</Os_version>-->
+<!--                        &lt;!&ndash;suppress UnresolvedMavenProperty &ndash;&gt;-->
+<!--                        <BrowserName>${DBrowserName}</BrowserName>-->
+<!--                        &lt;!&ndash;suppress UnresolvedMavenProperty &ndash;&gt;-->
+<!--                        <BrowserVersion>${DBrowserVersion}</BrowserVersion>-->
+<!--                        &lt;!&ndash;suppress UnresolvedMavenProperty &ndash;&gt;-->
+<!--                        <UseCloudEnv>${DUseCloudEnv}</UseCloudEnv>-->
+<!--                        &lt;!&ndash;suppress UnresolvedMavenProperty &ndash;&gt;-->
+<!--                        <CloudEnvName>${DCloudEnvName}</CloudEnvName>-->
+<!--                        &lt;!&ndash;suppress UnresolvedMavenProperty &ndash;&gt;-->
+<!--                        <ImplicitlyWaitTime>${DImplicitlyWaitTime}</ImplicitlyWaitTime>-->
                     </systemPropertyVariables>
                 </configuration>
+                <executions>
+                    <execution>
+                        <id>default-test</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>test</goal>
+                        </goals>
+                    </execution>
+                </executions>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
