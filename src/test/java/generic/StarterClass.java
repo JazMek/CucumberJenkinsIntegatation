@@ -56,11 +56,11 @@ public  class StarterClass extends Common {
     String browserName = prop.getProperty("BrowserName");
     String browserVersion = prop.getProperty("BrowserVersion");
     String url = prop.getProperty("Url");
-    Long implicitlywaitTime=Long.parseLong(prop.getProperty("ImplicitlyWaitTime").trim());
-    long implicitlyWaitTime= implicitlywaitTime.longValue();
+    long implicitlyWaitTime=Long.parseLong(prop.getProperty("ImplicitlyWaitTime").trim());
+    //long implicitlyWaitTime= implicitlywaitTime.longValue();
     @Before
     public void setUp_Init() throws IOException {
-       // readJenkinsParameters();
+        readJenkinsParameters();
         System.out.println("The Testing Environment is: "+testingEnvironment);
         System.out.println("Use Cloud Environment? "+useCloudEnv);
         System.out.println("The Cloud Environment Name is: "+cloudEnvName);

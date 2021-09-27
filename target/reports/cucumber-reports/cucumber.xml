@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="5" time="26.164">
+<testcase classname="Amazon search box" name=": testing search box in amazon home page" time="6.832">
+<system-out><![CDATA[Given the user lands to the Amazon home page................................passed
+When user enter "galaxy7"...................................................passed
+Then user should see a corespending "galaxy7"...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Amazon search box" name=": testing search box in amazon home page 2" time="5.969">
+<system-out><![CDATA[Given the user lands to the Amazon home page................................passed
+When user enter "iphone 11".................................................passed
+Then user should see a corespending "galaxy7"...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Amazon search box" name=": testing search box in amazon home page 3" time="6.279">
+<system-out><![CDATA[Given the user lands to the Amazon home page................................passed
+When user enter "battery"...................................................passed
+Then user should see a corespending "galaxy7"...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="FFM-OCMF-CreateOrderEventTransformerComparator" name="Create Order Event Transformer" time="3.587">
+<system-out><![CDATA[Given load the data with the data with "testdata"...........................passed
+Given with data file prefixed with "testdata" and json file is "testdata"...passed
+Then call apis and validate with all the data provided......................passed
+]]></system-out>
+</testcase>
+<testcase classname="FFM-OCMF-CreateOrderEventValidation" name="Create Order Event Validation" time="3.249">
+<system-out><![CDATA[Given load the data with the data with "testdata"...........................passed
+Given with data file prefixed with "testdata" and json file is "testdata"...passed
+Then call apis and validate with all the data provided......................passed
+]]></system-out>
+</testcase>
+</testsuite>

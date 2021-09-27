@@ -1,0 +1,573 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "start_timestamp": "2021-09-27T16:56:25.939Z",
+        "before": [
+          {
+            "result": {
+              "duration": 4382000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "generic.StarterClass.setUp_Init()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": ": testing search box in amazon home page",
+        "description": "",
+        "id": "amazon-search-box;:-testing-search-box-in-amazon-home-page;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 228000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "generic.StarterClass.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 191000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user lands to the Amazon home page",
+            "match": {
+              "location": "stepDefinations.StepDf.the_user_lands_to_the_amazon_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1845000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enter \"galaxy7\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"galaxy7\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinations.StepDf.user_enter(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 47000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should see a corespending \"galaxy7\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"galaxy7\"",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinations.StepDf.user_should_see_a_corespending(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@sanity"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-27T16:56:32.782Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3611000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "generic.StarterClass.setUp_Init()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": ": testing search box in amazon home page",
+        "description": "",
+        "id": "amazon-search-box;:-testing-search-box-in-amazon-home-page;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 209000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "generic.StarterClass.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 116000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user lands to the Amazon home page",
+            "match": {
+              "location": "stepDefinations.StepDf.the_user_lands_to_the_amazon_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1996000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enter \"iphone 11\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"iphone 11\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinations.StepDf.user_enter(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 29000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should see a corespending \"galaxy7\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"galaxy7\"",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinations.StepDf.user_should_see_a_corespending(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@sanity"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-09-27T16:56:38.756Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3521000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "generic.StarterClass.setUp_Init()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": ": testing search box in amazon home page",
+        "description": "",
+        "id": "amazon-search-box;:-testing-search-box-in-amazon-home-page;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 169000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "generic.StarterClass.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 240000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the user lands to the Amazon home page",
+            "match": {
+              "location": "stepDefinations.StepDf.the_user_lands_to_the_amazon_home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2299000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enter \"battery\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"battery\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinations.StepDf.user_enter(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 44000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user should see a corespending \"galaxy7\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"galaxy7\"",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinations.StepDf.user_should_see_a_corespending(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@sanity"
+          }
+        ]
+      }
+    ],
+    "name": "Amazon search box",
+    "description": "",
+    "id": "amazon-search-box",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/featureFiles/Amazon.feature",
+    "tags": [
+      {
+        "name": "@regression",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      },
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 13
+        }
+      }
+    ]
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2021-09-27T16:56:45.040Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3394000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "generic.StarterClass.setUp_Init()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Create Order Event Transformer",
+        "description": "",
+        "id": "ffm-ocmf-createordereventtransformercomparator;create-order-event-transformer;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 182000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "generic.StarterClass.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "load the data with the data with \"testdata\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"testdata\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinations.StepDf.load_the_data_with_the_data_with(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "with data file prefixed with \"testdata\" and json file is \"testdata\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"testdata\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"testdata\"",
+                  "offset": 57
+                }
+              ],
+              "location": "stepDefinations.StepDf.with_data_file_prefixed_with_and_json_file_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "call apis and validate with all the data provided",
+            "match": {
+              "location": "stepDefinations.StepDf.call_apis_and_validate_with_all_the_data_provided()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@loadTesting"
+          }
+        ]
+      }
+    ],
+    "name": "FFM-OCMF-CreateOrderEventTransformerComparator",
+    "description": "",
+    "id": "ffm-ocmf-createordereventtransformercomparator",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/featureFiles/FFM-OCMF-CreateOrderEventComparator.feature",
+    "tags": [
+      {
+        "name": "@regression",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      },
+      {
+        "name": "@smoke",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 13
+        }
+      },
+      {
+        "name": "@loadTesting",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 20
+        }
+      }
+    ]
+  },
+  {
+    "line": 3,
+    "elements": [
+      {
+        "start_timestamp": "2021-09-27T16:56:48.629Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3064000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "generic.StarterClass.setUp_Init()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Create Order Event Validation",
+        "description": "",
+        "id": "ffm-ocmf-createordereventvalidation;create-order-event-validation;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 174000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "generic.StarterClass.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "load the data with the data with \"testdata\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"testdata\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinations.StepDf.load_the_data_with_the_data_with(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "with data file prefixed with \"testdata\" and json file is \"testdata\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"testdata\"",
+                  "offset": 29
+                },
+                {
+                  "val": "\"testdata\"",
+                  "offset": 57
+                }
+              ],
+              "location": "stepDefinations.StepDf.with_data_file_prefixed_with_and_json_file_is(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "call apis and validate with all the data provided",
+            "match": {
+              "location": "stepDefinations.StepDf.call_apis_and_validate_with_all_the_data_provided()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@orderEvent"
+          },
+          {
+            "name": "@amar"
+          },
+          {
+            "name": "@sanity"
+          },
+          {
+            "name": "@smoke"
+          }
+        ]
+      }
+    ],
+    "name": "FFM-OCMF-CreateOrderEventValidation",
+    "description": "",
+    "id": "ffm-ocmf-createordereventvalidation",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/featureFiles/FFM-OCMF-CreateOrderEventValidation.feature",
+    "tags": [
+      {
+        "name": "@regression",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 1
+        }
+      },
+      {
+        "name": "@orderEvent",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 13
+        }
+      },
+      {
+        "name": "@amar",
+        "type": "Tag",
+        "location": {
+          "line": 2,
+          "column": 25
+        }
+      }
+    ]
+  }
+]
