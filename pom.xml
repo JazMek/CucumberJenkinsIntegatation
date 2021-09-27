@@ -133,22 +133,23 @@
                 <configuration>
                     <testFailureIgnore>true</testFailureIgnore>
                     <systemPropertyVariables>
-                        <!--suppress UnresolvedMavenProperty -->
-                        <TestingEnvironment>${DTestingEnvironment}</TestingEnvironment>
-                        <!--suppress UnresolvedMavenProperty -->
-                        <Os>${DOs}</Os>
-                        <!--suppress UnresolvedMavenProperty -->
-                        <Os_version>${DOs_version}</Os_version>
-                        <!--suppress UnresolvedMavenProperty -->
-                        <BrowserName>${DBrowserName}</BrowserName>
-                        <!--suppress UnresolvedMavenProperty -->
-                        <BrowserVersion>${DBrowserVersion}</BrowserVersion>
-                        <!--suppress UnresolvedMavenProperty -->
-                        <UseCloudEnv>${DUseCloudEnv}</UseCloudEnv>
-                        <!--suppress UnresolvedMavenProperty -->
-                        <CloudEnvName>${DCloudEnvName}</CloudEnvName>
-                        <!--suppress UnresolvedMavenProperty -->
-                        <ImplicitlyWaitTime>${DImplicitlyWaitTime}</ImplicitlyWaitTime>
+                        
+                        <TestingEnvironment>$DTestingEnvironment</TestingEnvironment>
+                     
+                        <Os>$DOs</Os>
+                       
+                        <Os_version>$DOs_version</Os_version>
+                     
+                        <BrowserName>$DBrowserName</BrowserName>
+                       
+                        <BrowserVersion>$DBrowserVersion</BrowserVersion>
+                        
+                        <UseCloudEnv>$DUseCloudEnv</UseCloudEnv>
+                        
+                        <CloudEnvName>$DCloudEnvName</CloudEnvName>
+                       
+                        <ImplicitlyWaitTime>$DImplicitlyWaitTime</ImplicitlyWaitTime>
+                             
                     </systemPropertyVariables>
                 </configuration>
             </plugin>
