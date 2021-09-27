@@ -64,7 +64,8 @@ choice(name :'tag', choices :[
 '@sanity',
 '@smoke' ,
 '@orderEvent',
-'@loadTesting'
+'@loadTesting',
+'@Ibrahim'
 ],
 description : "Select the test suit using the corresponding Tag"
 )
