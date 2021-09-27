@@ -134,7 +134,7 @@
                     <testFailureIgnore>true</testFailureIgnore>
                     <systemPropertyVariables>
                         <!--suppress UnresolvedMavenProperty -->
-                        <TestingEnvironment>${DTestingEnvironment}</TestingEnvironment>
+                        <TestingEnvironment>${TestingEnvironment}</TestingEnvironment>
                         <!--suppress UnresolvedMavenProperty -->
                         <Os>${DOs}</Os>
                         <!--suppress UnresolvedMavenProperty -->
