@@ -86,7 +86,7 @@ steps{
 //sh "mvn test -Dcucumber.filter.tags=${tag}"
   
    //sh "mvn install -Dcucumber.filter.tags=${tag}"
-   sh "mvn install -Dcucumber.filter.tags=${tag} -DTestingEnvironment=${TestingEnvironment=${TestingEnvironment}} -DUseCloudEnv=${UseCloudEnv} -DCloudEnvName=${CloudEnvName} -DCloudEnvName=${CloudEnvName}"
+   sh "mvn install -Dcucumber.filter.tags=${tag} -DTestingEnvironment='testingEnvironment= ${TestingEnvironment}' -DUseCloudEnv=${UseCloudEnv} -DCloudEnvName=${CloudEnvName} -DCloudEnvName=${CloudEnvName}"
   
 // sh 'mvn test -Dcucumber.options=”–tags ${tag}”'
 //echo "The application testing en ${TestingEnvironment} Environment, ${Browsers} Browser and Tag ${tag} was performed"
