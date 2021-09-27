@@ -1,4 +1,4 @@
-@regression @smoke
+@regression @smoke @Amazon
 Feature: Amazon search box
   @sanity
   Scenario Outline: : testing search box in amazon home page
