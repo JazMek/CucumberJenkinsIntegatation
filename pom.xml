@@ -10,6 +10,15 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+
+        <TestingEnvironment>TestingEnvironment</TestingEnvironment>
+        <UseCloudEnv>UseCloudEnv</UseCloudEnv>
+        <CloudEnvName>CloudEnvName</CloudEnvName>
+        <Os>Os</Os>
+        <Os_version>Os_version</Os_version>
+        <BrowserName>BrowserName</BrowserName>
+        <BrowserVersion>BrowserVersion</BrowserVersion>
+        <ImplicitlyWaitTime>ImplicitlyWaitTime</ImplicitlyWaitTime>
     </properties>
 
 
@@ -101,24 +110,17 @@
             <version>1.2.17</version>
         </dependency>
     </dependencies>
-    <profiles>
-        <profile>
-            <id>envUrl</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-            <properties>
-                <env.TestingEnvironment>TestingEnvironment</env.TestingEnvironment>
-                <env.UseCloudEnv>UseCloudEnv</env.UseCloudEnv>
-                <env.CloudEnvName>CloudEnvName</env.CloudEnvName>
-                <env.Os>Os</env.Os>
-                <env.Os_version>Os_version</env.Os_version>
-                <env.BrowserName>BrowserName</env.BrowserName>
-                <env.BrowserVersion>BrowserVersion</env.BrowserVersion>
-                <env.ImplicitlyWaitTime>ImplicitlyWaitTime</env.ImplicitlyWaitTime>
-            </properties>
-        </profile>
-    </profiles>
+<!--    <profiles>-->
+<!--        <profile>-->
+<!--            <id>envUrl</id>-->
+<!--            <activation>-->
+<!--                <activeByDefault>true</activeByDefault>-->
+<!--            </activation>-->
+<!--            <properties>-->
+
+<!--            </properties>-->
+<!--        </profile>-->
+<!--    </profiles>-->
     <build>
         <testResources>
             <testResource>
@@ -132,27 +134,30 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.12.4</version>
                 <configuration>
+
 <!--                    <testFailureIgnore>true</testFailureIgnore>-->
                     <systemPropertyVariables>
-                        <TestingEnvironment>${env.TestingEnvironment}</TestingEnvironment>
-                        <UseCloudEnv>${env.UseCloudEnv}</UseCloudEnv>
-                        <CloudEnvName>${env.CloudEnvName}</CloudEnvName>
-                        <Os>${env.Os}</Os>
-                        <Os_version>${env.Os_version}</Os_version>
-                        <BrowserName>${env.BrowserName}</BrowserName>
-                        <BrowserVersion>${env.BrowserVersion}</BrowserVersion>
-                        <ImplicitlyWaitTime>${env.ImplicitlyWaitTime}</ImplicitlyWaitTime>
+                        <activation>
+                            <activeByDefault>true</activeByDefault>
+                        </activation>
+                        <TestingEnvironment>${TestingEnvironment}</TestingEnvironment>
+                        <UseCloudEnv>${UseCloudEnv}</UseCloudEnv>
+                        <CloudEnvName>${CloudEnvName}</CloudEnvName>
+                        <Os>${Os}</Os>
+                        <Os_version>${Os_version}</Os_version>
+                        <BrowserName>${BrowserName}</BrowserName>
+                        <BrowserVersion>${BrowserVersion}</BrowserVersion>
+                        <ImplicitlyWaitTime>${ImplicitlyWaitTime}</ImplicitlyWaitTime>
+<!--                        <TestingEnvironment>${env.TestingEnvironment}</TestingEnvironment>-->
+<!--                        <UseCloudEnv>${env.UseCloudEnv}</UseCloudEnv>-->
+<!--                        <CloudEnvName>${env.CloudEnvName}</CloudEnvName>-->
+<!--                        <Os>${env.Os}</Os>-->
+<!--                        <Os_version>${env.Os_version}</Os_version>-->
+<!--                        <BrowserName>${env.BrowserName}</BrowserName>-->
+<!--                        <BrowserVersion>${env.BrowserVersion}</BrowserVersion>-->
+<!--                        <ImplicitlyWaitTime>${env.ImplicitlyWaitTime}</ImplicitlyWaitTime>-->
                     </systemPropertyVariables>
                 </configuration>
-                <executions>
-                    <execution>
-                        <id>default-test</id>
-                        <phase>test</phase>
-                        <goals>
-                            <goal>test</goal>
-                        </goals>
-                    </execution>
-                </executions>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
