@@ -94,7 +94,7 @@ BrowserVersion =${BrowserVersion}
 Url =${Url}
 ImplicitlyWaitTime =${ImplicitlyWaitTime}
                 """
-                writeFile file: "src/test/resources/config.properties", text: props
+                writeFile file: "config.properties", text: props
                 def str =  readFile file: "config.properties"
                 echo str
 
