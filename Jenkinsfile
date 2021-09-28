@@ -79,6 +79,28 @@ string(defaultValue: 'testkarim1980@gmail.com', description: 'email for notifica
 }
 //])
 stages {
+stage("props file"){
+        steps{
+            script {
+
+                def props = """
+TestingEnvironment =${TestingEnvironment}
+UseCloudEnv =${UseCloudEnv}
+CloudEnvName =${CloudEnvName}
+Os =${Os}
+Os_version =${Os_version}
+BrowserName =${BrowserName}
+BrowserVersion =${BrowserVersion}
+Url =${Url}
+ImplicitlyWaitTime =${ImplicitlyWaitTime}
+                """
+                writeFile file: "src/test/resources/config.properties", text: props
+                def str =  readFile file: "config.properties"
+                echo str
+
+            }
+         }
+      }
 stage('Running tests suit'){
 steps{
 // echo "The testing Environment is : ${TestingEnvironment} "
@@ -89,8 +111,8 @@ steps{
 //sh "mvn test -Dcucumber.filter.tags=${tag}"
   
    //sh "mvn install -Dcucumber.filter.tags=${tag}"
-   sh "mvn install -Dcucumber.filter.tags=${tag} -DTestingEnvironment =${TestingEnvironment}"
-   //-DUseCloudEnv="${UseCloudEnv}" -DCloudEnvName="${CloudEnvName}" -DCloudEnvName="${CloudEnvName}" -DUrl="${Url}" -DOs="${Os}" -DOs_version="${Os_version}" -DHeadless="${Headless}" -DBrowserName="${BrowserName}" -DBrowserVersion="${BrowserVersion}" -DImplicitlyWaitTime="${ImplicitlyWaitTime}"
+   sh "mvn install -Dcucumber.filter.tags=${tag}"
+   //-DTestingEnvironment =${TestingEnvironment} -DUseCloudEnv="${UseCloudEnv}" -DCloudEnvName="${CloudEnvName}" -DCloudEnvName="${CloudEnvName}" -DUrl="${Url}" -DOs="${Os}" -DOs_version="${Os_version}" -DHeadless="${Headless}" -DBrowserName="${BrowserName}" -DBrowserVersion="${BrowserVersion}" -DImplicitlyWaitTime="${ImplicitlyWaitTime}"
   
 // sh 'mvn test -Dcucumber.options=”–tags ${tag}”'
 //echo "The application testing en ${TestingEnvironment} Environment, ${Browsers} Browser and Tag ${tag} was performed"

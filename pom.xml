@@ -13,14 +13,14 @@
 <!--        <activation>-->
 <!--            <activeByDefault>true</activeByDefault>-->
 <!--        </activation>-->
-        <TestingEnvironment>${TestingEnvironment}</TestingEnvironment>
-        <UseCloudEnv>${UseCloudEnv}</UseCloudEnv>
-        <CloudEnvName>${CloudEnvName}</CloudEnvName>
-        <Os>Os</Os>
-        <Os_version>${Os_version}</Os_version>
-        <BrowserName>${BrowserName}</BrowserName>
-        <BrowserVersion>${BrowserVersion}</BrowserVersion>
-        <ImplicitlyWaitTime>${ImplicitlyWaitTime}</ImplicitlyWaitTime>
+<!--        <TestingEnvironment>${TestingEnvironment}</TestingEnvironment>-->
+<!--        <UseCloudEnv>${UseCloudEnv}</UseCloudEnv>-->
+<!--        <CloudEnvName>${CloudEnvName}</CloudEnvName>-->
+<!--        <Os>Os</Os>-->
+<!--        <Os_version>${Os_version}</Os_version>-->
+<!--        <BrowserName>${BrowserName}</BrowserName>-->
+<!--        <BrowserVersion>${BrowserVersion}</BrowserVersion>-->
+<!--        <ImplicitlyWaitTime>${ImplicitlyWaitTime}</ImplicitlyWaitTime>-->
     </properties>
 
 
@@ -142,14 +142,14 @@
                         <activation>
                             <activeByDefault>true</activeByDefault>
                         </activation>
-                        <TestingEnvironment>${TestingEnvironment}</TestingEnvironment>
-                        <UseCloudEnv>${UseCloudEnv}</UseCloudEnv>
-                        <CloudEnvName>${CloudEnvName}</CloudEnvName>
-                        <Os>${Os}</Os>
-                        <Os_version>${Os_version}</Os_version>
-                        <BrowserName>${BrowserName}</BrowserName>
-                        <BrowserVersion>${BrowserVersion}</BrowserVersion>
-                        <ImplicitlyWaitTime>${ImplicitlyWaitTime}</ImplicitlyWaitTime>
+<!--                        <TestingEnvironment>${TestingEnvironment}</TestingEnvironment>-->
+<!--                        <UseCloudEnv>${UseCloudEnv}</UseCloudEnv>-->
+<!--                        <CloudEnvName>${CloudEnvName}</CloudEnvName>-->
+<!--                        <Os>${Os}</Os>-->
+<!--                        <Os_version>${Os_version}</Os_version>-->
+<!--                        <BrowserName>${BrowserName}</BrowserName>-->
+<!--                        <BrowserVersion>${BrowserVersion}</BrowserVersion>-->
+<!--                        <ImplicitlyWaitTime>${ImplicitlyWaitTime}</ImplicitlyWaitTime>-->
 <!--                        <TestingEnvironment>${env.TestingEnvironment}</TestingEnvironment>-->
 <!--                        <UseCloudEnv>${env.UseCloudEnv}</UseCloudEnv>-->
 <!--                        <CloudEnvName>${env.CloudEnvName}</CloudEnvName>-->
