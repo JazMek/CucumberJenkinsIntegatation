@@ -101,19 +101,22 @@
             <version>1.2.17</version>
         </dependency>
     </dependencies>
-
     <profiles>
         <profile>
             <id>envUrl</id>
-
             <activation>
                 <activeByDefault>true</activeByDefault>
             </activation>
             <properties>
-                <env.url>https://www.amazon.com/</env.url>
-                <env.os>Mac</env.os>
+                <env.TestingEnvironment>TestingEnvironment</env.TestingEnvironment>
+                <env.UseCloudEnv>UseCloudEnv</env.UseCloudEnv>
+                <env.CloudEnvName>CloudEnvName</env.CloudEnvName>
+                <env.Os>Os</env.Os>
+                <env.Os_version>Os_version</env.Os_version>
+                <env.BrowserName>BrowserName</env.BrowserName>
+                <env.BrowserVersion>BrowserVersion</env.BrowserVersion>
+                <env.ImplicitlyWaitTime>ImplicitlyWaitTime</env.ImplicitlyWaitTime>
             </properties>
-
         </profile>
     </profiles>
     <build>
@@ -131,20 +134,14 @@
                 <configuration>
 <!--                    <testFailureIgnore>true</testFailureIgnore>-->
                     <systemPropertyVariables>
-                        <TestingEnvironment>${env.url}</TestingEnvironment>
-                        <Os>${env.os}</Os>
-<!--                        &lt;!&ndash;suppress UnresolvedMavenProperty &ndash;&gt;-->
-<!--                        <Os_version>${DOs_version}</Os_version>-->
-<!--                        &lt;!&ndash;suppress UnresolvedMavenProperty &ndash;&gt;-->
-<!--                        <BrowserName>${DBrowserName}</BrowserName>-->
-<!--                        &lt;!&ndash;suppress UnresolvedMavenProperty &ndash;&gt;-->
-<!--                        <BrowserVersion>${DBrowserVersion}</BrowserVersion>-->
-<!--                        &lt;!&ndash;suppress UnresolvedMavenProperty &ndash;&gt;-->
-<!--                        <UseCloudEnv>${DUseCloudEnv}</UseCloudEnv>-->
-<!--                        &lt;!&ndash;suppress UnresolvedMavenProperty &ndash;&gt;-->
-<!--                        <CloudEnvName>${DCloudEnvName}</CloudEnvName>-->
-<!--                        &lt;!&ndash;suppress UnresolvedMavenProperty &ndash;&gt;-->
-<!--                        <ImplicitlyWaitTime>${DImplicitlyWaitTime}</ImplicitlyWaitTime>-->
+                        <TestingEnvironment>${env.TestingEnvironment}</TestingEnvironment>
+                        <UseCloudEnv>${env.UseCloudEnv}</UseCloudEnv>
+                        <CloudEnvName>${env.CloudEnvName}</CloudEnvName>
+                        <Os>${env.Os}</Os>
+                        <Os_version>${env.Os_version}</Os_version>
+                        <BrowserName>${env.BrowserName}</BrowserName>
+                        <BrowserVersion>${env.BrowserVersion}</BrowserVersion>
+                        <ImplicitlyWaitTime>${env.ImplicitlyWaitTime}</ImplicitlyWaitTime>
                     </systemPropertyVariables>
                 </configuration>
                 <executions>
