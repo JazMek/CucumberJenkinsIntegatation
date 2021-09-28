@@ -13,7 +13,7 @@ import java.util.Properties;
 public  class StarterClass extends Common {
     public static AmazonHomePage amazonHomePage;
     // get parameters from Jenkins
-    String PropertiesFilePath = "src/test/resources/config.properties";
+    String PropertiesFilePath = "config.properties";
     String testingEnvironmentJ= System.getProperty("TestingEnvironment");
     String useCloudEnvJ= System.getProperty("UseCloudEnv");
     String cloudEnvNameJ= System.getProperty("CloudEnvName");
