@@ -1,8 +1,7 @@
 pipeline {
 agent any
-parameters {
 Environment{
-
+parameters {
 choice(name :'TestingEnvironment', choices :[
 'STG',
 'DEV',
