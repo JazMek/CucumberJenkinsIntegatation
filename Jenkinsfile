@@ -1,6 +1,6 @@
 pipeline {
 agent any
-properties([
+options([
 parameters {
 choice(name :'TestingEnvironment', choices :[
 'STG',
@@ -24,7 +24,7 @@ choice(name :'CloudEnvName', choices :[
 description : "Select the Cloud Environment"
 )
   
-string(description: 'Entre the Url : ', defaultValue: 'https://www.exemple.com/', name: 'Url')
+string(description: 'Entre the Url : ', defaultValue: 'https://www.amazon.com/', name: 'Url')
   
 choice(description : "Select the Operating System: " ,name :'Os', choices :[
 'Mac',
@@ -60,13 +60,14 @@ description : "Select the Browser"
 string(defaultValue: '94', description: 'Browser Version', name: 'BrowserVersion')
   
 choice(name :'tag', choices :[
+'@Amazon',
 '@regression',
 '@sanity',
 '@smoke' ,
 '@orderEvent',
 '@loadTesting',
-'@Ibrahim',
-'@Amazon'
+'@Ibrahim'
+
 ],
 description : "Select the test suit using the corresponding Tag"
 )
