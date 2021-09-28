@@ -136,12 +136,11 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>2.12.4</version>
                 <configuration>
-
-<!--                    <testFailureIgnore>true</testFailureIgnore>-->
+                    <testFailureIgnore>true</testFailureIgnore>
                     <systemPropertyVariables>
-                        <activation>
-                            <activeByDefault>true</activeByDefault>
-                        </activation>
+<!--                        <activation>-->
+<!--                            <activeByDefault>true</activeByDefault>-->
+<!--                        </activation>-->
 <!--                        <TestingEnvironment>${TestingEnvironment}</TestingEnvironment>-->
 <!--                        <UseCloudEnv>${UseCloudEnv}</UseCloudEnv>-->
 <!--                        <CloudEnvName>${CloudEnvName}</CloudEnvName>-->
