@@ -89,7 +89,7 @@ steps{
 //sh "mvn test -Dcucumber.filter.tags=${tag}"
   
    //sh "mvn install -Dcucumber.filter.tags=${tag}"
-   sh "mvn install -Dcucumber.filter.tags=${tag} -DTestingEnvironment =${TestingEnvironment} -DUseCloudEnv=${UseCloudEnv} -DCloudEnvName=${CloudEnvName} -DCloudEnvName=${CloudEnvName} -DUrl=${Url} -DOs=${Os} -DOs_version=${Os_version} -DHeadless=${Headless} -DBrowserName=${BrowserName} -DBrowserVersion=${BrowserVersion} -DImplicitlyWaitTime=${ImplicitlyWaitTime}"
+   sh "mvn install -Dcucumber.filter.tags="${tag}" -DTestingEnvironment ="${TestingEnvironment}" -DUseCloudEnv="${UseCloudEnv}" -DCloudEnvName="${CloudEnvName}" -DCloudEnvName="${CloudEnvName}" -DUrl="${Url}" -DOs="${Os}" -DOs_version="${Os_version}" -DHeadless="${Headless}" -DBrowserName="${BrowserName}" -DBrowserVersion="${BrowserVersion}" -DImplicitlyWaitTime="${ImplicitlyWaitTime}""
   
 // sh 'mvn test -Dcucumber.options=”–tags ${tag}”'
 //echo "The application testing en ${TestingEnvironment} Environment, ${Browsers} Browser and Tag ${tag} was performed"
