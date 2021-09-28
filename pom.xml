@@ -10,20 +10,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-<!--        <activation>-->
-<!--            <activeByDefault>true</activeByDefault>-->
-<!--        </activation>-->
-<!--        <TestingEnvironment>${TestingEnvironment}</TestingEnvironment>-->
-<!--        <UseCloudEnv>${UseCloudEnv}</UseCloudEnv>-->
-<!--        <CloudEnvName>${CloudEnvName}</CloudEnvName>-->
-<!--        <Os>Os</Os>-->
-<!--        <Os_version>${Os_version}</Os_version>-->
-<!--        <BrowserName>${BrowserName}</BrowserName>-->
-<!--        <BrowserVersion>${BrowserVersion}</BrowserVersion>-->
-<!--        <ImplicitlyWaitTime>${ImplicitlyWaitTime}</ImplicitlyWaitTime>-->
     </properties>
-
-
     <dependencies>
         <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-html -->
         <dependency>
@@ -112,17 +99,6 @@
             <version>1.2.17</version>
         </dependency>
     </dependencies>
-<!--    <profiles>-->
-<!--        <profile>-->
-<!--            <id>envUrl</id>-->
-<!--            <activation>-->
-<!--                <activeByDefault>true</activeByDefault>-->
-<!--            </activation>-->
-<!--            <properties>-->
-
-<!--            </properties>-->
-<!--        </profile>-->
-<!--    </profiles>-->
     <build>
         <testResources>
             <testResource>
@@ -138,25 +114,6 @@
                 <configuration>
                     <testFailureIgnore>true</testFailureIgnore>
                     <systemPropertyVariables>
-<!--                        <activation>-->
-<!--                            <activeByDefault>true</activeByDefault>-->
-<!--                        </activation>-->
-<!--                        <TestingEnvironment>${TestingEnvironment}</TestingEnvironment>-->
-<!--                        <UseCloudEnv>${UseCloudEnv}</UseCloudEnv>-->
-<!--                        <CloudEnvName>${CloudEnvName}</CloudEnvName>-->
-<!--                        <Os>${Os}</Os>-->
-<!--                        <Os_version>${Os_version}</Os_version>-->
-<!--                        <BrowserName>${BrowserName}</BrowserName>-->
-<!--                        <BrowserVersion>${BrowserVersion}</BrowserVersion>-->
-<!--                        <ImplicitlyWaitTime>${ImplicitlyWaitTime}</ImplicitlyWaitTime>-->
-<!--                        <TestingEnvironment>${env.TestingEnvironment}</TestingEnvironment>-->
-<!--                        <UseCloudEnv>${env.UseCloudEnv}</UseCloudEnv>-->
-<!--                        <CloudEnvName>${env.CloudEnvName}</CloudEnvName>-->
-<!--                        <Os>${env.Os}</Os>-->
-<!--                        <Os_version>${env.Os_version}</Os_version>-->
-<!--                        <BrowserName>${env.BrowserName}</BrowserName>-->
-<!--                        <BrowserVersion>${env.BrowserVersion}</BrowserVersion>-->
-<!--                        <ImplicitlyWaitTime>${env.ImplicitlyWaitTime}</ImplicitlyWaitTime>-->
                     </systemPropertyVariables>
                 </configuration>
             </plugin>

@@ -12,30 +12,7 @@ import java.util.Properties;
 
 public  class StarterClass extends Common {
     public static AmazonHomePage amazonHomePage;
-    // get parameters from Jenkins
     String PropertiesFilePath = "config.properties";
-    String testingEnvironmentJ= System.getProperty("TestingEnvironment");
-    String useCloudEnvJ= System.getProperty("UseCloudEnv");
-    String cloudEnvNameJ= System.getProperty("CloudEnvName");
-    String osJ= System.getProperty("Os");
-    String os_versionJ = System.getProperty("Os_version");
-    String browserNameJ = System.getProperty("BrowserName");
-    String browserVersionJ = System.getProperty("BrowserVersion");
-    String urlJ = System.getProperty("Url");
-    String implicitlyWaitTimeJ=System.getProperty("ImplicitlyWaitTime");
-    public void readJenkinsParameters() throws IOException {
-        // put the parameter in the prop file
-        setAppProperties("TestingEnvironment",testingEnvironmentJ, PropertiesFilePath);
-        setAppProperties("UseCloudEnv",useCloudEnvJ, PropertiesFilePath);
-        setAppProperties("CloudEnvName",cloudEnvNameJ, PropertiesFilePath);
-        setAppProperties("Os",osJ, PropertiesFilePath);
-        setAppProperties("Os_version",os_versionJ, PropertiesFilePath);
-        setAppProperties("BrowserName",browserNameJ, PropertiesFilePath);
-        setAppProperties("BrowserVersion",browserVersionJ, PropertiesFilePath);
-        setAppProperties("Url",urlJ, PropertiesFilePath);
-        setAppProperties("ImplicitlyWaitTime",implicitlyWaitTimeJ, PropertiesFilePath);
-    }
-    // Read properties from propertie file
     public static Properties prop;
     {
         try {
@@ -44,11 +21,7 @@ public  class StarterClass extends Common {
             e.printStackTrace();
         }
     }
-    public static void Init() {
-        amazonHomePage = PageFactory.initElements(driver,AmazonHomePage.class);
-    }
-
-    String testingEnvironment= prop.getProperty("TestingEnvironment");
+    String Environment= prop.getProperty("Environment");
     Boolean useCloudEnv= Boolean.parseBoolean(prop.getProperty("UseCloudEnv")) ;
     String cloudEnvName= prop.getProperty("CloudEnvName");
     String os= prop.getProperty("Os");
@@ -56,20 +29,30 @@ public  class StarterClass extends Common {
     String browserName = prop.getProperty("BrowserName");
     String browserVersion = prop.getProperty("BrowserVersion");
     String url = prop.getProperty("Url");
-    Long implicitlywaitTime=Long.parseLong(prop.getProperty("ImplicitlyWaitTime").trim());
-    long implicitlyWaitTime= implicitlywaitTime.longValue();
+    long implicitlyWaitTime=Long.parseLong(prop.getProperty("ImplicitlyWaitTime").trim());
+    //long implicitlyWaitTime= implicitlywaitTime.longValue();
+
+    // Read properties from propertie file
+
+    public static void Init() {
+        amazonHomePage = PageFactory.initElements(driver,AmazonHomePage.class);
+    }
+
     @Before
     public void setUp_Init() throws IOException {
-        //readJenkinsParameters();
-        System.out.println("The Testing Environment is: "+testingEnvironment);
+        System.out.println("The Testing Environment is: "+Environment);
         System.out.println("Use Cloud Environment? "+useCloudEnv);
         System.out.println("The Cloud Environment Name is: "+cloudEnvName);
+        System.out.println("The os is: "+os);
+        System.out.println("The os_version is: "+os_version);
+        System.out.println("The browser Version is: "+browserVersion);
+        System.out.println("The browser Name is: "+browserName);
+        System.out.println("The url is: "+url);
+        System.out.println("The implicitly Wait Time is: "+implicitlyWaitTime);
         setUp( useCloudEnv,  cloudEnvName,
                 os,  os_version,  browserName,
                 browserVersion, url,implicitlyWaitTime);
         Init();
-
-
     }
     //ScreenShot method
     @After
