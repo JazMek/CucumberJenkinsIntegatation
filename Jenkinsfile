@@ -1,6 +1,6 @@
 pipeline {
 agent any
-//properties([
+properties([
 parameters {
 choice(name :'TestingEnvironment', choices :[
 'STG',
@@ -76,7 +76,7 @@ string(defaultValue: '2', description: 'Implicitly wait time', name: 'Implicitly
 string(defaultValue: 'testkarim1980@gmail.com', description: 'email for notifications', name: 'notification_email')
   
 }
-//])
+])
 stages {
 stage('Running tests suit'){
 steps{
