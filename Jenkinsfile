@@ -1,6 +1,6 @@
 pipeline {
 agent any
-environment{
+//properties([
 parameters {
 choice(name :'TestingEnvironment', choices :[
 'STG',
@@ -76,7 +76,7 @@ string(defaultValue: '2', description: 'Implicitly wait time', name: 'Implicitly
 string(defaultValue: 'testkarim1980@gmail.com', description: 'email for notifications', name: 'notification_email')
   
 }
-}
+//])
 stages {
 stage('Running tests suit'){
 steps{
@@ -88,8 +88,7 @@ steps{
 //sh "mvn test -Dcucumber.filter.tags=${tag}"
   
    //sh "mvn install -Dcucumber.filter.tags=${tag}"
-   sh "mvn install -Dcucumber.filter.tags=${tag} -DTestingEnvironment =${TestingEnvironment}"
-   //-DUseCloudEnv="${UseCloudEnv}" -DCloudEnvName="${CloudEnvName}" -DCloudEnvName="${CloudEnvName}" -DUrl="${Url}" -DOs="${Os}" -DOs_version="${Os_version}" -DHeadless="${Headless}" -DBrowserName="${BrowserName}" -DBrowserVersion="${BrowserVersion}" -DImplicitlyWaitTime="${ImplicitlyWaitTime}""
+   sh "mvn install -Dcucumber.filter.tags=${tag} -DTestingEnvironment =${TestingEnvironment} -DUseCloudEnv=${UseCloudEnv} -DCloudEnvName=${CloudEnvName} -DCloudEnvName=${CloudEnvName} -DUrl=${Url} -DOs=${Os} -DOs_version=${Os_version} -DHeadless=${Headless} -DBrowserName=${BrowserName} -DBrowserVersion=${BrowserVersion} -DImplicitlyWaitTime=${ImplicitlyWaitTime}"
   
 // sh 'mvn test -Dcucumber.options=”–tags ${tag}”'
 //echo "The application testing en ${TestingEnvironment} Environment, ${Browsers} Browser and Tag ${tag} was performed"
