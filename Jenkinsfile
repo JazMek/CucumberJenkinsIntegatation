@@ -110,7 +110,7 @@ echo "Test succeeded"
 emailext attachmentsPattern: '**/*.html, **/*.pdf',
 to: "${notification_email}",
 subject: "Status and reports of pipeline: ${currentBuild.fullDisplayName}",
-body: "${env.BUILD_URL} has result: ${currentBuild.result}"
+body: {"${env.BUILD_URL} has result: ${currentBuild.result}","Environment =${Environment}"}
 cucumber fileIncludePattern: 'target/reports/cucumber-reports/cucumber.json', sortingMethod: 'ALPHABETICAL'
 }
 }
