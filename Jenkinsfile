@@ -109,24 +109,26 @@ steps{
 post {
 always {
 echo "Test succeeded"
-// emailext attachmentsPattern: '**/*.html, **/*.pdf',
-// to: "${notification_email}",
-// subject: "Status and reports of pipeline: ${currentBuild.fullDisplayName}",
-// body: "${env.BUILD_URL} has result: ${currentBuild.result}"
-
-emailext attachLog: true, body:
-   """<p>EXECUTED: Job <b>\'${env.JOB_NAME}:${env.BUILD_NUMBER})\'
-   </b></p><p>View console output at "<a href="${env.BUILD_URL}">
-   ${env.JOB_NAME}:${env.BUILD_NUMBER}</a>"</p>
-     <p><i>(Build log is attached.)</i></p>""",
-    compressLog: true,
-    recipientProviders: [[$class: 'DevelopersRecipientProvider'],
-     [$class: 'RequesterRecipientProvider']],
-    replyTo: 'do-not-reply@company.com',
-    subject: "Status: ${currentBuild.result?:'SUCCESS'} -
-    Job \'${env.JOB_NAME}:${env.BUILD_NUMBER}\'",
-    to: "${notification_email}"
-
+emailext attachmentsPattern: '**/*.html, **/*.pdf',
+to: "${notification_email}",
+subject: "Status and reports of pipeline: ${currentBuild.fullDisplayName}",
+//body: "${env.BUILD_URL} has result: ${currentBuild.result}"
+body:"""<p>EXECUTED: Job <b>\'${env.JOB_NAME}:${env.BUILD_NUMBER})\'
+         </b></p><p>View console output at "<a href="${env.BUILD_URL}">
+         ${env.JOB_NAME}:${env.BUILD_NUMBER}</a>"</p>
+           <p><i>(Build log is attached.)</i></p>"""
+// "
+//       ${env.BUILD_URL} has result: ${currentBuild.result}
+//       TestingEnvironment =${TestingEnvironment}
+//       UseCloudEnv =${UseCloudEnv}
+//       CloudEnvName =${CloudEnvName}
+//       Os =${Os}
+//       Os_version =${Os_version}
+//       BrowserName =${BrowserName}
+//       BrowserVersion =${BrowserVersion}
+//       Url =${Url}
+//       ImplicitlyWaitTime =${ImplicitlyWaitTime}
+//                       "
 cucumber fileIncludePattern: 'target/reports/cucumber-reports/cucumber.json', sortingMethod: 'ALPHABETICAL'
 }
 }
