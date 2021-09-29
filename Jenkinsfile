@@ -102,33 +102,11 @@ ImplicitlyWaitTime =${ImplicitlyWaitTime}
       }
 stage('Running the test suit'){
 steps{
-            // Run the maven build
+
 
                sh "mvn install -Dcucumber.filter.tags=${tag}"
 
                //bat("/mvn install -Dcucumber.filter.tags=${tag}/")
-
-
-// def isOnWindows(){
-//     def os = "${Os}"
-//     {
-//         if (os=="windows"){
-//         return true
-//         }
-//    }
-//     return false
-//  }
-// if (isOnWindows()) {
-//     bat("/mvn install -Dcucumber.filter.tags=${tag}/")
-//     //def osName = bat(script: command, returnStdout: true)
-// } else {
-//     sh "mvn install -Dcucumber.filter.tags=${tag}"
-//     //def osName = sh(script: command, returnStdout: true)
-// }
-
-
-
-//    sh "mvn install -Dcucumber.filter.tags=${tag}"
 
 }
 }

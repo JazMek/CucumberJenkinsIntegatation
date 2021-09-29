@@ -1,7 +1,0 @@
-webPages/AmazonHomePage.class
-utill/reporting/ApplicationLog.class
-utill/reporting/ConfigFileReader.class
-utill/reporting/TestLogger.class
-utill/Common.class
-utill/reporting/ExtentManager.class
-utill/reporting/ExtentTestManager.class
