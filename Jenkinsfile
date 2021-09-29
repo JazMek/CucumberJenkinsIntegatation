@@ -102,11 +102,11 @@ ImplicitlyWaitTime =${ImplicitlyWaitTime}
 stage('Running the test suit'){
 steps{
             // Run the maven build
-            if (isUnix()) {
+//             if (isUnix()) {
                sh "mvn install -Dcucumber.filter.tags=${tag}"
-           } else {
+//            } else {
                bat("/mvn install -Dcucumber.filter.tags=${tag}/")
-           }
+//            }
 
 //    sh "mvn install -Dcucumber.filter.tags=${tag}"
 
