@@ -8,8 +8,8 @@ package utill.reporting;
 //import org.testng.Reporter;
 //
 public class TestLogger {
-    public static void log(String browser_is_launching) {
-    }
+//    public static void log(String browser_is_launching) {
+//    }
 //    public static void log(final String message){
 //        JavaScriptScanner.Reporter.log(message,true);
 //        ExtentTestManager.getTest().log(LogStatus.INFO, message + "<br>");

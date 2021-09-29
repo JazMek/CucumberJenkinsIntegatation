@@ -77,10 +77,9 @@ string(defaultValue: 'testkarim1980@gmail.com', description: 'email for notifica
   
 }
 stages {
-stage("props file"){
+stage("Load Properties to configuration file"){
         steps{
             script {
-
                 def props = """
 Environment =${Environment}
 UseCloudEnv =${UseCloudEnv}
@@ -95,11 +94,10 @@ ImplicitlyWaitTime =${ImplicitlyWaitTime}
                 writeFile file: "config.properties", text: props
                 def str =  readFile file: "config.properties"
                 echo str
-
             }
          }
       }
-stage('Running tests suit'){
+stage('Running the test suit'){
 steps{
    sh "mvn install -Dcucumber.filter.tags=${tag}"
 
@@ -110,9 +108,22 @@ post {
 always {
 echo "Test succeeded"
 emailext attachmentsPattern: '**/*.html, **/*.pdf',
-body: "${env.BUILD_URL} has result: ${currentBuild.result}",
-subject: "Status of pipeline: ${currentBuild.fullDisplayName}",
 to: "${notification_email}"
+subject: "Status and reports of pipeline: ${currentBuild.fullDisplayName}",
+body: "${env.BUILD_URL} has result: ${currentBuild.result}
+"""
+Environment =${Environment}
+UseCloudEnv =${UseCloudEnv}
+CloudEnvName =${CloudEnvName}
+Os =${Os}
+Os_version =${Os_version}
+BrowserName =${BrowserName}
+BrowserVersion =${BrowserVersion}
+Url =${Url}
+ImplicitlyWaitTime =${ImplicitlyWaitTime}
+                """
+",
+
 cucumber fileIncludePattern: 'target/reports/cucumber-reports/cucumber.json', sortingMethod: 'ALPHABETICAL'
 }
 }

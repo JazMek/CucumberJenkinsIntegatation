@@ -3,7 +3,7 @@ package utill.reporting;
 public class ApplicationLog {
     public static void epicLogger(){
         //TestLogger.log(epic);
-        TestLogger.log("Browser is launching");
+//        TestLogger.log("Browser is launching");
 
     }
 }
