@@ -1,7 +1,7 @@
 pipeline {
 agent any
 parameters {
-choice(name :'Environment', choices :[
+choice(name :'Env', choices :[
 'STG',
 'DEV',
 'QA',
@@ -81,7 +81,7 @@ stage("Load Properties to configuration file"){
         steps{
             script {
                 def props = """
-Environment =${Environment}
+Environment =${Env}
 UseCloudEnv =${UseCloudEnv}
 CloudEnvName =${CloudEnvName}
 Os =${Os}
@@ -110,7 +110,7 @@ echo "Test succeeded"
 emailext attachmentsPattern: '**/*.html, **/*.pdf',
 to: "${notification_email}",
 subject: "Status and reports of pipeline: ${currentBuild.fullDisplayName}",
-body: "${env.BUILD_URL} has result: ${currentBuild.result} Environment =${Environment}"
+body: "${env.BUILD_URL} has result: ${currentBuild.result} /n Environment ==> ${Env}"
 cucumber fileIncludePattern: 'target/reports/cucumber-reports/cucumber.json', sortingMethod: 'ALPHABETICAL'
 }
 }
