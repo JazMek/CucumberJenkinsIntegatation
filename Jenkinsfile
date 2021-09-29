@@ -104,9 +104,9 @@ stage('Running the test suit'){
 steps{
             // Run the maven build
 
-               //sh "mvn install -Dcucumber.filter.tags=${tag}"
+               sh "mvn install -Dcucumber.filter.tags=${tag}"
 
-               bat("/mvn install -Dcucumber.filter.tags=${tag}/")
+               //bat("/mvn install -Dcucumber.filter.tags=${tag}/")
 
 
 // def isOnWindows(){
