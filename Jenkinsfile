@@ -74,6 +74,7 @@ description : "Select the test suit using the corresponding Tag"
 string(defaultValue: '2', description: 'Implicitly wait time', name: 'ImplicitlyWaitTime')
   
 string(defaultValue: 'testkarim1980@gmail.com', description: 'email for notifications', name: 'notification_email')
+
   
 }
 stages {
@@ -105,25 +106,25 @@ steps{
 
                //sh "mvn install -Dcucumber.filter.tags=${tag}"
 
-               //bat("/mvn install -Dcucumber.filter.tags=${tag}/")
+               bat("/mvn install -Dcucumber.filter.tags=${tag}/")
 
 
-def isOnWindows(){
-    def os = "${Os}"
-    {
-        if (os=="windows"){
-        return true
-        }
-   }
-    return false
- }
-if (isOnWindows()) {
-    bat("/mvn install -Dcucumber.filter.tags=${tag}/")
-    //def osName = bat(script: command, returnStdout: true)
-} else {
-    sh "mvn install -Dcucumber.filter.tags=${tag}"
-    //def osName = sh(script: command, returnStdout: true)
-}
+// def isOnWindows(){
+//     def os = "${Os}"
+//     {
+//         if (os=="windows"){
+//         return true
+//         }
+//    }
+//     return false
+//  }
+// if (isOnWindows()) {
+//     bat("/mvn install -Dcucumber.filter.tags=${tag}/")
+//     //def osName = bat(script: command, returnStdout: true)
+// } else {
+//     sh "mvn install -Dcucumber.filter.tags=${tag}"
+//     //def osName = sh(script: command, returnStdout: true)
+// }
 
 
 
