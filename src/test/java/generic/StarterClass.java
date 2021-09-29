@@ -21,7 +21,7 @@ public  class StarterClass extends Common {
             e.printStackTrace();
         }
     }
-    String environment= prop.getProperty("Environment");
+    String environment= prop.getProperty("Env");
     Boolean useCloudEnv= Boolean.parseBoolean(prop.getProperty("UseCloudEnv")) ;
     String cloudEnvName= prop.getProperty("CloudEnvName");
     String os= prop.getProperty("Os");

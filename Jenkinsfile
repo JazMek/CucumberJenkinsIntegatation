@@ -81,7 +81,8 @@ stage("Load Properties to configuration file"){
         steps{
             script {
                 def props = """
-Environment =${Env}
+
+Env =${Env}
 UseCloudEnv =${UseCloudEnv}
 CloudEnvName =${CloudEnvName}
 Os =${Os}
@@ -90,6 +91,7 @@ BrowserName =${BrowserName}
 BrowserVersion =${BrowserVersion}
 Url =${Url}
 ImplicitlyWaitTime =${ImplicitlyWaitTime}
+
                 """
                 writeFile file: "config.properties", text: props
                 def str =  readFile file: "config.properties"
@@ -110,7 +112,8 @@ echo "Test succeeded"
 emailext attachmentsPattern: '**/*.html, **/*.pdf',
 to: "${notification_email}",
 subject: "Status and reports of pipeline: ${currentBuild.fullDisplayName}",
-body: "${env.BUILD_URL} has result: ${currentBuild.result} /n Environment ==> ${Env}"
+body: "${env.BUILD_URL} has result: ${currentBuild.result}
+Environment ==> ${Env}"
 cucumber fileIncludePattern: 'target/reports/cucumber-reports/cucumber.json', sortingMethod: 'ALPHABETICAL'
 }
 }
