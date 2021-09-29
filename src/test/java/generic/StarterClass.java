@@ -21,7 +21,7 @@ public  class StarterClass extends Common {
             e.printStackTrace();
         }
     }
-    String environment= prop.getProperty("Env");
+    String testingEnvironment= prop.getProperty("TestingEnvironment");
     Boolean useCloudEnv= Boolean.parseBoolean(prop.getProperty("UseCloudEnv")) ;
     String cloudEnvName= prop.getProperty("CloudEnvName");
     String os= prop.getProperty("Os");
@@ -40,7 +40,7 @@ public  class StarterClass extends Common {
 
     @Before
     public void setUp_Init() throws IOException {
-        System.out.println("The Testing Environment is: "+ environment);
+        System.out.println("The Testing Environment is: "+ testingEnvironment);
         System.out.println("Use Cloud Environment? "+useCloudEnv);
         System.out.println("The Cloud Environment Name is: "+cloudEnvName);
         System.out.println("The os is: "+os);
