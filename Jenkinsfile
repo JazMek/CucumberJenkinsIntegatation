@@ -113,7 +113,7 @@ emailext attachmentsPattern: '**/*.html, **/*.pdf',
 to: "${notification_email}",
 subject: "Status and reports of pipeline: ${currentBuild.fullDisplayName}",
 //body: "${env.BUILD_URL} has result: ${currentBuild.result}"
-body:"""<p>EXECUTED: Job <b>\'${env.JOB_NAME}:${env.BUILD_NUMBER})\'
+body:"""<p>EXECUTED: Job <b>'${env.JOB_NAME}:${env.BUILD_NUMBER})'
          </b></p><p>View console output at "<a href="${env.BUILD_URL}">
          ${env.JOB_NAME}:${env.BUILD_NUMBER}</a>"</p>
            <p><i>(Build log is attached.)</i></p>"""
