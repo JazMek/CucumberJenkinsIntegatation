@@ -110,16 +110,16 @@ echo "Test succeeded"
 emailext attachmentsPattern: '**/*.html, **/*.pdf',
 to: "${notification_email}",
 subject: "Status and reports of pipeline: ${currentBuild.fullDisplayName}",
-body: "${env.BUILD_URL} has result: ${currentBuild.result}
+body: "${env.BUILD_URL} has result: ${currentBuild.result},
 
-Environment =${Environment}
-UseCloudEnv =${UseCloudEnv}
-CloudEnvName =${CloudEnvName}
-Os =${Os}
-Os_version =${Os_version}
-BrowserName =${BrowserName}
-BrowserVersion =${BrowserVersion}
-Url =${Url}
+Environment =${Environment},
+UseCloudEnv =${UseCloudEnv},
+CloudEnvName =${CloudEnvName},
+Os =${Os},
+Os_version =${Os_version},
+BrowserName =${BrowserName},
+BrowserVersion =${BrowserVersion},
+Url =${Url},
 ImplicitlyWaitTime =${ImplicitlyWaitTime}
 "
 cucumber fileIncludePattern: 'target/reports/cucumber-reports/cucumber.json', sortingMethod: 'ALPHABETICAL'
