@@ -1,0 +1,6 @@
+
+^
+java:S2094
+"BRemove this empty class, write its code or make it an "interface".(ˆ¼¥Q8¾µÌùÂ/
+]	java:S125"<This block of commented-out lines of code should be removed.(ö÷­®üÿÿÿÿ8ø¯ËùÂ/
+]	java:S125"<This block of commented-out lines of code should be removed.(åÛÃêıÿÿÿÿ8ÁµÌùÂ/

@@ -128,9 +128,12 @@ public class Common {
             try {
                 Object Timestamp = new SimpleDateFormat(" yy-MM-dd HH-mm-ss").format(new Date());
                 TakesScreenshot shot = (TakesScreenshot) driver;
-                File file = shot.getScreenshotAs(OutputType.FILE);
-                File screensho_Destination = new File("./target/Screenshot/Screenshot" + scenario.getName() + Timestamp + ".png");
-                FileUtils.copyFile(file, screensho_Destination);
+                File screenshotFile = shot.getScreenshotAs(OutputType.FILE);
+                byte[] screenshotfile = shot.getScreenshotAs(OutputType.BYTES);
+                String screenshotName=scenario.getName() + Timestamp;
+                File screensho_Destination = new File("./target/Screenshot/Screenshot" + screenshotName + ".png");
+                FileUtils.copyFile(screenshotFile, screensho_Destination);
+                scenario.attach(screenshotfile,"image/png",screenshotName);
             } catch (WebDriverException e) {
                 e.printStackTrace();
             } catch (IOException e) {

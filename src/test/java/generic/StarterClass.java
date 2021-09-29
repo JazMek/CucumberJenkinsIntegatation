@@ -3,6 +3,7 @@ package generic;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.support.PageFactory;
 import utill.Common;
 import webPages.AmazonHomePage;

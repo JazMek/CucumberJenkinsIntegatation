@@ -23,18 +23,18 @@ public class StepDf extends AmazonHomePage {
     @Given("the user lands to the Amazon home page")
     public void the_user_lands_to_the_amazon_home_page() {
         System.out.println(driver.getTitle());
-//        try {
-//            System.out.println(loadProperties("src/test/resources/config.properties").getProperty("ImplicitlyWaitTime"));
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
+        try {
+            System.out.println(loadProperties("src/test/resources/config.properties").getProperty("ImplicitlyWaitTime"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
     }
     @When("user enter {string}")
     public void user_enter(String input) {
 
-//        SearchBox.sendKeys(input);
-//        SearchBoxButton.click();
+        SearchBox.sendKeys(input);
+        SearchBoxButton.click();
     }
     @Then("user should see a corespending {string}")
     public void user_should_see_a_corespending(String string) {
