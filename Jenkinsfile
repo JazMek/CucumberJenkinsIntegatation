@@ -49,8 +49,10 @@ description : "Headless Browser ?"
 choice(name :'BrowserName', choices :[
 'Chrome',
 'Safari',
-'Fire Fox',
-'Internet Explorer',
+'Firefox',
+'IE',
+'Edge',
+'chrome-options',
 'All'
 ],
 description : "Select the Browser"
@@ -104,7 +106,8 @@ stage('Running the test suit'){
 steps{
             script {
              def os = "${Os}"
-             if(os=="Windows"){bat(/mvn install -Dcucumber.filter.tags=${tag}/)
+             if(os=="Windows"){
+             bat(/mvn install -Dcucumber.filter.tags=${tag}/)
              }else
               {sh "mvn install -Dcucumber.filter.tags=${tag}"}
               }
