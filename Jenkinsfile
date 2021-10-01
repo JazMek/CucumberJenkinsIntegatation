@@ -31,6 +31,8 @@ choice(description : "Select the Operating System: " ,name :'Os', choices :[
 'Linux'
 ]
 )
+ script {
+             def OS = "${Os}"
 if(OS=='Mac'){
 choice(description : "Select the OS Version:" ,name :'Os_version', choices :[
 'Big Sur',
@@ -49,6 +51,7 @@ choice(description : "Select the OS Version:" ,name :'Os_version', choices :[
 'Obunto'
 ]
 )
+}
 }
 choice(description : "Select the OS Version:" ,name :'Os_version', choices :[
 'Big Sur',
