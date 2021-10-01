@@ -31,13 +31,13 @@ choice(description : "Select the Operating System: " ,name :'Os', choices :[
 'Linux'
 ]
 )
-if(OS='Mac'){
+if(OS=='Mac'){
 choice(description : "Select the OS Version:" ,name :'Os_version', choices :[
 'Big Sur',
 'Catalina'
 ]
 )
-}else if(OS='Windows'){
+}else if(OS=='Windows'){
 choice(description : "Select the OS Version:" ,name :'Os_version', choices :[
 'Windows 10',
 'Windows 7'
