@@ -12,8 +12,8 @@ description : "Select the Testing Environment"
 )
 
 choice(name :'UseCloudEnv', choices :[
-'True',
-'False'
+'False',
+'True'
 ],
 description : "Use Cloud Environment"
 )
