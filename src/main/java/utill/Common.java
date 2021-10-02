@@ -147,6 +147,29 @@ public class Common {
             }
         }
     }
+
+    //Cucumber screenShot Method
+    public void cucumberScreenShot(Scenario scenario) throws IOException {
+        if (scenario.isFailed()) {
+            try {
+                Object Timestamp = new SimpleDateFormat(" yy-MM-dd HH-mm-ss").format(new Date());
+                TakesScreenshot shot = (TakesScreenshot) driver;
+                final byte[] screenshotFile = shot.getScreenshotAs(OutputType.BYTES);
+                String screenshotName=scenario.getName() + Timestamp;
+                scenario.attach(screenshotFile,"image/png",screenshotName);
+            } catch (WebDriverException e) {
+                e.printStackTrace();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        } else {
+            try {
+                scenario.getName();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+    }
     // Helper methods
     public void clickOnElement(String locator) {
         try {

@@ -24,7 +24,7 @@ public class StepDf extends AmazonHomePage {
     public void the_user_lands_to_the_amazon_home_page() {
         System.out.println(driver.getTitle());
         try {
-            System.out.println(loadProperties("src/test/resources/config.properties").getProperty("ImplicitlyWaitTime"));
+            System.out.println(loadProperties("config.properties").getProperty("ImplicitlyWaitTime"));
         } catch (IOException e) {
             e.printStackTrace();
         }

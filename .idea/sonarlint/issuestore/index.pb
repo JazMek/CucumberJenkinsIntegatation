@@ -11,3 +11,5 @@ c
 3src/main/java/utill/reporting/ConfigFileReader.java,8/4/84a4c662fb7e55219458e8467bc80db94a63acb4
 a
 1src/main/java/utill/reporting/ApplicationLog.java,a/3/a35edad3d5f7bebb7a129c7b9d560452aaed41b0
+Z
+*src/main/java/webPages/AmazonHomePage.java,d/9/d97b79e71dfd16afeea136cbc9d9875865cc84c3
