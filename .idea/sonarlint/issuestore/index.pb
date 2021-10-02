@@ -1,6 +1,4 @@
 
-]
--src/test/java/cucumberOptions/TestRunner.java,3/a/3af43fce6cfa57ee0dd0aa911d53765f26431783
 `
 0src/main/java/utill/reporting/ExtentManager.java,3/4/34ff1f8c81828711d123f897c664cdd45c887820
 d

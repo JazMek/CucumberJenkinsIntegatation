@@ -17,8 +17,8 @@ import org.junit.runner.RunWith;
                              "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"
                              },
                    monochrome=true,
-                    strict=true,
-                    tags="@smoke"
+                    strict=true
+                    //tags="@Amazon"
                   //tags={"@regression","@sanity", "@smoke", "@orderEvent","@amar","@loadTesting"}
                  )
 public class TestRunner {
