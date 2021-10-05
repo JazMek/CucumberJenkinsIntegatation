@@ -69,7 +69,7 @@ public class Common {
                 getCloudDriver(cloudEnvName, saucelabs_username, saucelabs_accesskey, os, os_version, browserName, browserVersion);
             }
         } else {
-            getLocalDriver(browserName);
+            getLocalDriver(os,browserName);
         }
         driver.manage().timeouts().implicitlyWait(implicitlyWaitTime, TimeUnit.SECONDS);
         //driver.manage().deleteAllCookies();
@@ -77,32 +77,75 @@ public class Common {
         driver.get(url);
     }
 
-    public WebDriver getLocalDriver(String browserName) {
 
-        if (browserName.equalsIgnoreCase("Chrome")) {
-            WebDriverManager.chromedriver().setup();
+    public WebDriver getLocalDriver(String OS, String browserName) {
+
+        if (browserName.equalsIgnoreCase("chrome")) {
+            if (OS.equalsIgnoreCase("mac")) {
+                System.setProperty("webdriver.chrome.driver", "./src/webDrivers/mac/chromedriver");
+            } else if (OS.equalsIgnoreCase("Windows")) {
+                System.setProperty("webdriver.chrome.driver", "../src/webDrivers/windows/chromedriver.exe");
+            }
             driver = new ChromeDriver();
-
-        } else if (browserName.equalsIgnoreCase("Firefox")) {
-            WebDriverManager.firefoxdriver().setup();
-            driver = new FirefoxDriver();
-
-        } else if (browserName.equalsIgnoreCase("IE")) {
-            WebDriverManager.iedriver().setup();
-            driver = new InternetExplorerDriver();
-
-        } else if (browserName.equalsIgnoreCase("Edge")) {
-            WebDriverManager.edgedriver().setup();
-            driver = new EdgeDriver();
-
         } else if (browserName.equalsIgnoreCase("chrome-options")) {
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--disable-notifications");
-            WebDriverManager.chromedriver().setup();
+            if (OS.equalsIgnoreCase("mac")) {
+                System.setProperty("webdriver.chrome.driver", "../Generic/BrowserDriver/mac/chromedriver");
+            } else if (OS.equalsIgnoreCase("Windows")) {
+                System.setProperty("webdriver.chrome.driver", "../Generic/BrowserDriver/windows/chromedriver.exe");
+            }
             driver = new ChromeDriver(options);
+        } else if (browserName.equalsIgnoreCase("firefox")) {
+            if (OS.equalsIgnoreCase("mac")) {
+                System.setProperty("webdriver.gecko.driver", "./src/webDrivers/mac/geckodriver");
+            } else if (OS.equalsIgnoreCase("Windows")) {
+                System.setProperty("webdriver.gecko.driver", "../src/webDrivers/windows/geckodriver.exe");
+            }
+            driver = new FirefoxDriver();
+
         }
+        else if (browserName.equalsIgnoreCase("ie")) {
+            System.setProperty("webdriver.ie.driver", "../src/webDrivers/windows/IEDriverServer.exe");
+            driver = new InternetExplorerDriver();
+        }
+        else if (browserName.equalsIgnoreCase("Edge")) {
+            if (OS.equalsIgnoreCase("mac")) {
+        System.setProperty("webdriver.edge.driver", "./src/webDrivers/mac/msedgedriver");
+            } else if (OS.equalsIgnoreCase("Windows")) {
+                System.setProperty("webdriver.edge.driver", "../src/webDrivers/windows/geckodriver.exe");
+            }
+        driver = new EdgeDriver();
+    }
         return driver;
     }
+
+//    public WebDriver getLocalDriver(String browserName) {
+//
+//        if (browserName.equalsIgnoreCase("Chrome")) {
+//            WebDriverManager.chromedriver().setup();
+//            driver = new ChromeDriver();
+//
+//        } else if (browserName.equalsIgnoreCase("Firefox")) {
+//            WebDriverManager.firefoxdriver().setup();
+//            driver = new FirefoxDriver();
+//
+//        } else if (browserName.equalsIgnoreCase("IE")) {
+//            WebDriverManager.iedriver().setup();
+//            driver = new InternetExplorerDriver();
+//
+//        } else if (browserName.equalsIgnoreCase("Edge")) {
+//            WebDriverManager.edgedriver().setup();
+//            driver = new EdgeDriver();
+//
+//        } else if (browserName.equalsIgnoreCase("chrome-options")) {
+//            ChromeOptions options = new ChromeOptions();
+//            options.addArguments("--disable-notifications");
+//            WebDriverManager.chromedriver().setup();
+//            driver = new ChromeDriver(options);
+//        }
+//        return driver;
+//    }
 
     public WebDriver getCloudDriver(String envName, String envUsername, String envAccessKey, String os, String os_version, String browserName,
                                     String browserVersion) throws IOException {

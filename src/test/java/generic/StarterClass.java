@@ -50,15 +50,15 @@ public  class StarterClass extends Common {
 
     @Before
     public void setUp_Init() throws IOException {
-        System.out.println("The Testing Environment is: "+ testingEnvironment);
-        System.out.println("Use Cloud Environment? "+useCloudEnv);
-        System.out.println("The Cloud Environment Name is: "+cloudEnvName);
-        System.out.println("The os is: "+os);
-        System.out.println("The os_version is: "+os_version);
-        System.out.println("The browser Version is: "+browserVersion);
-        System.out.println("The browser Name is: "+browserName);
-        System.out.println("The url is: "+url);
-        System.out.println("The implicitly Wait Time is: "+implicitlyWaitTime);
+//        System.out.println("The Testing Environment is: "+ testingEnvironment);
+//        System.out.println("Use Cloud Environment? "+useCloudEnv);
+//        System.out.println("The Cloud Environment Name is: "+cloudEnvName);
+//        System.out.println("The os is: "+os);
+//        System.out.println("The os_version is: "+os_version);
+//        System.out.println("The browser Version is: "+browserVersion);
+//        System.out.println("The browser Name is: "+browserName);
+//        System.out.println("The url is: "+url);
+//        System.out.println("The implicitly Wait Time is: "+implicitlyWaitTime);
         setUp( useCloudEnv,  cloudEnvName,
                 os,  os_version,  browserName,
                 browserVersion, url,implicitlyWaitTime);
