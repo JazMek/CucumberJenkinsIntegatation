@@ -123,7 +123,6 @@ echo "Test succeeded"
 emailext attachmentsPattern: '**/*.html, **/*.pdf',
 to: "${notification_email}",
 subject: "Status and reports of pipeline: ${currentBuild.fullDisplayName}",
-//body: "${env.BUILD_URL} has result: ${currentBuild.result}"
 body:"""<p>EXECUTED: Job <b>'${env.JOB_NAME}:${env.BUILD_NUMBER})'
          </b></p><p>View console output at "<a href="${env.BUILD_URL}">
          ${env.JOB_NAME}:${env.BUILD_NUMBER}</a>"</p>
@@ -132,6 +131,26 @@ body:"""<p>EXECUTED: Job <b>'${env.JOB_NAME}:${env.BUILD_NUMBER})'
            <p><i>(Cucumber reports are attached.)</i></p>
            <p><i>(Extent reports are attached.)</i></p>
            <p><i>(Build log is attached.)</i></p>"""
+
+           body:"""
+           <style>
+           p {
+             color: navy;
+             text-indent: 30px;
+             text-transform: uppercase;
+           }
+           </style>
+           <p>EXECUTED: Job <b>'${env.JOB_NAME}:${env.BUILD_NUMBER})'
+         </b></p><p>View console output at "<a href="${env.BUILD_URL}">
+         ${env.JOB_NAME}:${env.BUILD_NUMBER}</a>"</p>
+           <p><i>The Testing Environment is: ${TestingEnvironment}</i></p>
+           <p><i>The Operating System is: ${Os}</i></p>
+           <p><i>(Cucumber reports are attached.)</i></p>
+           <p><i>(Extent reports are attached.)</i></p>
+           <p><i>(Build log is attached.)</i></p>"""
+
+
+
 // "
 //       ${env.BUILD_URL} has result: ${currentBuild.result}
 //       TestingEnvironment =${TestingEnvironment}

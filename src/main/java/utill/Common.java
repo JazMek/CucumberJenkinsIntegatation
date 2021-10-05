@@ -84,36 +84,36 @@ public class Common {
             if (OS.equalsIgnoreCase("mac")) {
                 System.setProperty("webdriver.chrome.driver", "./src/webDrivers/mac/chromedriver");
             } else if (OS.equalsIgnoreCase("Windows")) {
-                System.setProperty("webdriver.chrome.driver", "../src/webDrivers/windows/chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "./src/webDrivers/windows/chromedriver.exe");
             }
             driver = new ChromeDriver();
         } else if (browserName.equalsIgnoreCase("chrome-options")) {
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--disable-notifications");
             if (OS.equalsIgnoreCase("mac")) {
-                System.setProperty("webdriver.chrome.driver", "../Generic/BrowserDriver/mac/chromedriver");
+                System.setProperty("webdriver.chrome.driver", "./Generic/BrowserDriver/mac/chromedriver");
             } else if (OS.equalsIgnoreCase("Windows")) {
-                System.setProperty("webdriver.chrome.driver", "../Generic/BrowserDriver/windows/chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "./Generic/BrowserDriver/windows/chromedriver.exe");
             }
             driver = new ChromeDriver(options);
         } else if (browserName.equalsIgnoreCase("firefox")) {
             if (OS.equalsIgnoreCase("mac")) {
                 System.setProperty("webdriver.gecko.driver", "./src/webDrivers/mac/geckodriver");
             } else if (OS.equalsIgnoreCase("Windows")) {
-                System.setProperty("webdriver.gecko.driver", "../src/webDrivers/windows/geckodriver.exe");
+                System.setProperty("webdriver.gecko.driver", "./src/webDrivers/windows/geckodriver.exe");
             }
             driver = new FirefoxDriver();
 
         }
         else if (browserName.equalsIgnoreCase("ie")) {
-            System.setProperty("webdriver.ie.driver", "../src/webDrivers/windows/IEDriverServer.exe");
+            System.setProperty("webdriver.ie.driver", "./src/webDrivers/windows/IEDriverServer.exe");
             driver = new InternetExplorerDriver();
         }
         else if (browserName.equalsIgnoreCase("Edge")) {
             if (OS.equalsIgnoreCase("mac")) {
         System.setProperty("webdriver.edge.driver", "./src/webDrivers/mac/msedgedriver");
             } else if (OS.equalsIgnoreCase("Windows")) {
-                System.setProperty("webdriver.edge.driver", "../src/webDrivers/windows/geckodriver.exe");
+                System.setProperty("webdriver.edge.driver", "./src/webDrivers/windows/geckodriver.exe");
             }
         driver = new EdgeDriver();
     }

@@ -9,3 +9,15 @@ c
 3src/main/java/utill/reporting/ConfigFileReader.java,8/4/84a4c662fb7e55219458e8467bc80db94a63acb4
 a
 1src/main/java/utill/reporting/ApplicationLog.java,a/3/a35edad3d5f7bebb7a129c7b9d560452aaed41b0
+Z
+*src/main/java/webPages/AmazonHomePage.java,d/9/d97b79e71dfd16afeea136cbc9d9875865cc84c3
+Y
+)src/test/java/stepDefinations/StepDf.java,c/a/ca02fe9d26fbdb05ee4d9da0e3300c132e45fa44
+W
+'src/test/java/generic/StarterClass.java,5/0/506f3eebedd3c3bda8f2b134c369cfc89a561796
+7
+pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
+O
+src/main/java/utill/Common.java,b/a/ba248c1447b4db6a2de973772491c4ee04bd1cd3
+A
+config.properties,5/b/5b4197fb87e6e5ff44afbf358a3bd23a35f56456
