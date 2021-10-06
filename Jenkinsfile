@@ -140,7 +140,7 @@ subject: "Status and reports of pipeline: ${currentBuild.fullDisplayName}",
            <p style="background-color:tomato;"><i>The Operating System is: ${Os}</i></p>
            <p style="border:2px solid DodgerBlue;"><i>(Cucumber reports are attached.)</i></p>
            <p style="color:DodgerBlue;><i>(Extent reports are attached.)</i></p>
-           <p style="color:MediumSeaGreen;"><i>(Build log is attached.)</i></p>"""
+           <p style="background-color:rgb(255, 99, 71);"><i>(Build log is attached.)</i></p>"""
 
 
 
