@@ -139,8 +139,8 @@ subject: "Status and reports of pipeline: ${currentBuild.fullDisplayName}",
            <p style="background-color:tomato;"><i>The Testing Environment is: ${TestingEnvironment}</i></p>
            <p style="background-color:tomato;"><i>The Operating System is: ${Os}</i></p>
            <p><i>(Cucumber reports are attached.)</i></p>
-           <p style="color:blue;><i>(Extent reports are attached.)</i></p>
-           <p style="color:red;"><i>(Build log is attached.)</i></p>"""
+           <p style="color:DodgerBlue;><i>(Extent reports are attached.)</i></p>
+           <p style="color:MediumSeaGreen;"><i>(Build log is attached.)</i></p>"""
 
 
 
