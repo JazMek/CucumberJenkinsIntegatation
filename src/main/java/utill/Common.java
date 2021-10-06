@@ -12,6 +12,7 @@ import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -116,7 +117,11 @@ public class Common {
                 System.setProperty("webdriver.edge.driver", "./src/webDrivers/windows/geckodriver.exe");
             }
         driver = new EdgeDriver();
-    }
+       }
+        else if (browserName.equalsIgnoreCase("Safari")) {
+            driver = new SafariDriver();
+        }
+
         return driver;
     }
 
