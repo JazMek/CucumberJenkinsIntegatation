@@ -133,21 +133,14 @@ subject: "Status and reports of pipeline: ${currentBuild.fullDisplayName}",
 //            <p><i>(Build log is attached.)</i></p>"""
 
            body:"""
-           <style>
-           p {
-             color: navy;
-             text-indent: 30px;
-             text-transform: uppercase;
-           }
-           </style>
-           <p>EXECUTED: Job <b>'${env.JOB_NAME}:${env.BUILD_NUMBER})'
+           <p style="background-color:powderblue;">EXECUTED: Job <b>'${env.JOB_NAME}:${env.BUILD_NUMBER})'
          </b></p><p>View console output at "<a href="${env.BUILD_URL}">
          ${env.JOB_NAME}:${env.BUILD_NUMBER}</a>"</p>
-           <p><i>The Testing Environment is: ${TestingEnvironment}</i></p>
-           <p><i>The Operating System is: ${Os}</i></p>
+           <p style="background-color:tomato;"><i>The Testing Environment is: ${TestingEnvironment}</i></p>
+           <p style="background-color:tomato;"><i>The Operating System is: ${Os}</i></p>
            <p><i>(Cucumber reports are attached.)</i></p>
-           <p><i>(Extent reports are attached.)</i></p>
-           <p><i>(Build log is attached.)</i></p>"""
+           <p style="color:blue;><i>(Extent reports are attached.)</i></p>
+           <p style="color:red;"><i>(Build log is attached.)</i></p>"""
 
 
 
